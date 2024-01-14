@@ -1,0 +1,87 @@
+
+@keyframes slideAnimation {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .looper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .looper__innerList {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+  }
+  
+  .looper__listInstance {
+    display: flex;
+    width: max-content;
+  
+    animation: slideAnimation linear infinite;
+  }
+
+
+.looper__innerList[data-animate="true"] .looper__listInstance {
+    animation: slideAnimation linear infinite;   
+  }
+  
+  .looper__listInstance {
+    display: flex;
+    width: max-content;
+  
+    animation: none;
+  }
+
+  /* .looper__listInstance.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  .looper__listInstance.fade-out {
+    opacity: 1; 
+    animation: fadeOut 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    to { opacity: 0; }
+  } */
+
+.looper{
+  position:relative; 
+  background-color: #2e2f3b;
+  opacity: 1;
+  z-index: 9;
+}
+
+.blur-overlay {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Adjust the colors and stops as needed */
+  filter: blur(2px); /* Adjust the blur strength as needed */
+  pointer-events: none; /* Ensure the overlay doesn't interfere with mouse events on underlying content */
+  z-index: 1;
+}
+.blur-overlay2 {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Adjust the colors and stops as needed */
+  filter: blur(2px); /* Adjust the blur strength as needed */
+  pointer-events: none; /* Ensure the overlay doesn't interfere with mouse events on underlying content */
+  z-index: 1;
+}

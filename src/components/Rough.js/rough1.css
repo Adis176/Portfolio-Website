@@ -1,0 +1,24 @@
+.led{
+    width: 100px;
+    min-width: 50px;
+    min-height: 50px;
+    margin:20px;
+    z-index: 0;
+}
+.led:hover{
+    z-index: 1000 !important;
+    /* background-color: blue!important; */
+}
+
+.blue{
+    background-color: blueviolet;
+}
+.red{background-color: red;}
+
+.led-bar{
+    display: flex;
+}
+
+.gold{
+    background-color: aqua;
+}

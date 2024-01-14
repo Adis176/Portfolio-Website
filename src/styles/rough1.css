@@ -1,0 +1,228 @@
+@media (prefers-reduced-motion: no-preference) {
+    .reveal {
+        opacity: 0
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .reveal,.reveal-tablet-md-down,.reveal-tablet-md-up {
+        position: relative;
+        animation-delay: calc(var(--animation-delay) * .1s)
+    }
+
+    .reveal:not(.reveal--active,.reveal-tablet-md-down--active,.reveal-tablet-md-up--active),.reveal-tablet-md-down:not(.reveal--active,.reveal-tablet-md-down--active,.reveal-tablet-md-up--active),.reveal-tablet-md-up:not(.reveal--active,.reveal-tablet-md-down--active,.reveal-tablet-md-up--active) {
+        transition: translate .3s var(--animation-timing),opacity .3s var(--animation-timing)
+    }
+
+    .reveal--active,.reveal-tablet-md-down--active,.reveal-tablet-md-up--active {
+        opacity: 1
+    }
+
+    .reveal--active.reveal--staggered-random,.reveal-tablet-md-down--active.reveal--staggered-random,.reveal-tablet-md-up--active.reveal--staggered-random {
+        animation-delay: .5s
+    }
+
+    .reveal--active.reveal--fade-up-quick,.reveal-tablet-md-down--active.reveal--fade-up-quick,.reveal-tablet-md-up--active.reveal--fade-up-quick {
+        animation-name: fade-up;
+        animation-duration: .3s;
+        animation-fill-mode: both;
+        animation-timing-function: var(--animation-timing)
+    }
+
+    .reveal--active.reveal--fade-up,.reveal-tablet-md-down--active.reveal--fade-up,.reveal-tablet-md-up--active.reveal--fade-up {
+        animation-name: fade-up;
+        animation-duration: .5s;
+        animation-fill-mode: both;
+        animation-timing-function: var(--animation-timing)
+    }
+
+    .reveal--active.reveal--fade-in,.reveal-tablet-md-down--active.reveal--fade-in,.reveal-tablet-md-up--active.reveal--fade-in {
+        animation-name: fade-in;
+        animation-duration: .65s;
+        animation-fill-mode: both;
+        animation-timing-function: var(--animation-timing)
+    }
+
+    .reveal--active.reveal--fade-top,.reveal-tablet-md-down--active.reveal--fade-top,.reveal-tablet-md-up--active.reveal--fade-top {
+        animation: fade-top .75s var(--animation-timing)
+    }
+
+    .reveal--active.reveal--fade-bottom,.reveal-tablet-md-down--active.reveal--fade-bottom,.reveal-tablet-md-up--active.reveal--fade-bottom {
+        animation-name: fade-bottom;
+        animation-duration: .75s;
+        animation-fill-mode: both;
+        animation-timing-function: var(--animation-timing)
+    }
+
+    .reveal--active.reveal--fade-left,.reveal-tablet-md-down--active.reveal--fade-left,.reveal-tablet-md-up--active.reveal--fade-left {
+        animation-name: fade-left;
+        animation-duration: .75s;
+        animation-fill-mode: both;
+        animation-timing-function: var(--animation-timing)
+    }
+
+    .reveal--active.reveal--fade-right,.reveal-tablet-md-down--active.reveal--fade-right,.reveal-tablet-md-up--active.reveal--fade-right {
+        animation-name: fade-right;
+        animation-duration: .75s;
+        animation-fill-mode: both;
+        animation-timing-function: var(--animation-timing)
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) and (max-width: 48em) {
+    .reveal--active.reveal--fade-bottom-tablet-md-down,.reveal-tablet-md-down--active.reveal--fade-bottom-tablet-md-down,.reveal-tablet-md-up--active.reveal--fade-bottom-tablet-md-down {
+        animation-name:fade-bottom;
+        animation-duration: .5s;
+        animation-fill-mode: both;
+        animation-timing-function: var(--animation-timing)
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) and (min-width: 48em) {
+    .reveal--active.reveal--fade-left-tablet-md-up,.reveal-tablet-md-down--active.reveal--fade-left-tablet-md-up,.reveal-tablet-md-up--active.reveal--fade-left-tablet-md-up {
+        animation-name:fade-left;
+        animation-duration: .75s;
+        animation-fill-mode: both;
+        animation-timing-function: var(--animation-timing)
+    }
+
+    .reveal--active.reveal--fade-right-tablet-md-up,.reveal-tablet-md-down--active.reveal--fade-right-tablet-md-up,.reveal-tablet-md-up--active.reveal--fade-right-tablet-md-up {
+        animation-name: fade-right;
+        animation-duration: .75s;
+        animation-fill-mode: both;
+        animation-timing-function: var(--animation-timing)
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) and (max-width: 48em) {
+    .reveal-tablet-md-down {
+        opacity:0
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) and (min-width: 48em) {
+    .reveal-tablet-md-up {
+        opacity:0
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes fade-up {
+        0% {
+            transform: translateY(20px);
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes fade-in {
+        0% {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes fade-top {
+        0% {
+            transform: translateY(-100px);
+            opacity: 0
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes fade-bottom {
+        0% {
+            transform: translateY(50px);
+            opacity: 0
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes fade-left {
+        0% {
+            transform: translate(-100px);
+            opacity: 0
+        }
+
+        to {
+            transform: translate(0);
+            opacity: 1
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes fade-right {
+        0% {
+            transform: translate(100px);
+            opacity: 0
+        }
+
+        to {
+            transform: translate(0);
+            opacity: 1
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    #hand {
+        animation-name: hero-hand;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+        animation-delay: 1s
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes hero-hand {
+        0% {
+            transform: translate(0) translateY(0)
+        }
+
+        30% {
+            transform: translate(3px) translateY(1px)
+        }
+
+        40% {
+            transform: translate(8px) translateY(0)
+        }
+
+        50% {
+            transform: translate(0) translateY(-1px)
+        }
+
+        60% {
+            transform: translate(4px) translateY(0)
+        }
+
+        to {
+            transform: translate(0) translateY(0)
+        }
+    }
+}

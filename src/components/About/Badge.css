@@ -1,0 +1,72 @@
+/* .badge-card{
+    min-width: 100%;
+}
+
+
+.badge-img{
+    width: 100% !important;
+    height: 100% !important;
+} */
+
+
+.badge-card{
+    background-color: transparent !important ;
+    border: 0px !important;
+    margin: 1em !important;
+    opacity: 1 !important;
+}
+
+.badge-container{
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    /* height: 20em !important; */
+    /* width: 120%; */
+    border-radius: 3em !important;
+    opacity: 1 !important;
+    text-align: center !important;
+}
+    
+.badge-front{
+    background-color: rgb(16, 13, 37) !important;
+    /* background-color: rgb(30, 23, 67) !important; */
+    border-radius: 0.6em;
+
+    color: rgb(224, 222, 242)!important;  
+    font-size: 0.55em !important;
+    align-items: center;
+    /* text-align: left; */
+    min-height: 11em;
+    border-radius: 2em;
+    /* padding: 1.5em; */
+    height: inherit !important;
+    padding: 2.4em !important;
+    opacity: 1 !important;
+    border: 1px solid rgb(224, 222, 242, 0.2)!important;  
+}
+
+
+.badge-img{
+        border: 1px solid rgba(75, 58, 231, 0.4)!important;
+        border-radius: 1.6em !important;
+        /* margin: 2em; */
+        width: 10em !important ;
+        height: 10em !important;
+        /* aspect-ratio: 1/1 !important; */
+        position: relative;
+        border-radius: 1em !important;
+        
+    }
+    
+    .badge-title{
+        /* background-color: aqua; */
+        text-align: center !important;
+        margin-top: 1.5em !important;
+        /* margin-left: 0.7em !important; */
+        font-size: 2em !important;
+        overflow: hidden;
+        font-weight: 800 !important;
+    }
+    
+    

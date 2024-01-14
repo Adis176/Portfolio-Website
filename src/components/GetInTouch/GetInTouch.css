@@ -1,0 +1,66 @@
+.contact-disp{
+  display: grid !important;
+  grid-template-rows: auto 1fr auto !important;
+  height: 100vh !important; 
+}
+
+.container-main{
+    display: flex !important;
+    justify-content: center;
+    margin: 0 auto !important;
+    width: 80% !important;
+    flex: 1;;
+    /* background-color: aqua; */
+}
+.contact-container{
+    min-width: 26em !important ;
+    padding: 1.5em 0.75em !important;
+    padding-left: 1.4em !important;
+    
+    display: flex !important;
+    margin: 5em !important ;
+    /* justify-content: space-between !important; */
+    background-color: rgb(16, 13, 37);
+    /* background-color: aqua !important; */
+    color: rgb(252, 252, 252) !important;
+    /* opacity: 0.9 !important; */
+    text-align: left !important;
+    font-weight: 600 !important;
+    width: 0% !important;
+    border-radius: 1.4em !important;
+    border: 1px solid rgb(252, 252, 252, 0.1) !important;
+}
+
+.contact-main-title{
+    margin-bottom: 0.7em !important;
+    margin-left: -0.1em !important;
+}
+
+.contact-input{
+    background-color: rgb(30, 23, 67) !important;
+    color: rgb(224, 222, 242)!important;  /* Set the color to your desired value */
+    font-size: 1.1em !important;
+    width: 20em !important;
+    border: 0px !important;
+}
+
+.form-control{
+    padding: 0.8em !important;
+    margin-bottom:  1em !important;
+}
+.form-control::placeholder {
+    color: rgb(170, 166, 195)!important;  /* Set the color to your desired value */
+    font-size: 0.8em !important;
+    font-weight: 600 !important;
+}
+
+.contact-button{
+    background-color: rgb(19, 15, 34) !important;
+    color: white !important;
+    border-radius: 0.6em !important;
+    padding: 0.6em 2em !important;
+    margin: 1em 0em !important;
+    /* box-shadow:  2px 8px 10px rgba(0, 0, 0, 0.6), 0 4px 20px 2px rgba(120, 120, 120, 0.39) !important; */
+    border: 1px solid rgb(170, 166, 195, 0.3) !important;
+    margin-bottom: 0px !important;
+}

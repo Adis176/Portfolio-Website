@@ -1,0 +1,79 @@
+.uni-card-cont{
+  padding: 1em;
+}
+.uni-button {
+   
+    border-radius: 50px;
+    background-color: rgb(85, 23, 23);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    transform: translateZ(40px);
+}
+  
+.uni-card {
+  padding:1em;
+    position: relative;
+    float: center;
+    width: 20em;
+    height: 35em;
+    margin: auto;
+    border-radius: 30px;
+    background: rgb(222, 222, 222);
+    background: -webkit-linear-gradient(268deg, #f24223 0%, #ca1b1b 100%)
+      rgb(222, 222, 222);
+    background: -moz-linear-gradient(268deg, #f24223 0%, #ca1b1b 100%)
+      rgb(222, 222, 222);
+    background: -o-linear-gradient(268deg, #f24223 0%, #ca1b1b 100%)
+      rgb(222, 222, 222);
+    background: -ms-linear-gradient(268deg, #f24223 0%, #ca1b1b 100%)
+      rgb(222, 222, 222);
+    background: linear-gradient(182deg, #f24223 0%, #ca1b1b 100%)
+      rgb(222, 222, 222);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    transform: perspective(500px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.uni-card:hover {
+  transform: rotateX(5deg) rotateY(5deg); /* Adjust the rotation values as needed */
+}
+  
+.uni-desc {
+    
+
+    text-align: justify;
+    color: #ffffff;
+    transform: translateZ(30px);
+}
+  
+.uni-shoe {
+    display: block;
+    position: relative;
+    float: left;
+    z-index: 2;
+    width: 308px;
+    height: auto;
+    margin: -55px 0 0 5px;
+    overflow: hidden;
+    transform: translateZ(50px);
+    filter: drop-shadow(2px 2px 20px #222);
+}
+  
+.uni-text {
+    float: left;
+    margin: 11px 0 0 17.87045%;
+    font-size: 1.059em;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    transform: translateZ(25px);
+}
+  
+.uni-title {
+    position: relative;
+    float: left;
+    clear: both;
+    margin: -55px 0 0 5.3841599999%;
+    font-size: 2.118em;
+    transform: translateZ(35px);
+}
+  

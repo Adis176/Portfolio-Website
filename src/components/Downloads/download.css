@@ -1,0 +1,42 @@
+.download-container{
+    margin-top: 4em;
+    padding-left: 0px !important;
+}
+
+.download-btn{
+    border: none !important;
+    background-color: #380bb4 !important;
+    color: aliceblue !important;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    justify-content: space-between !important;
+}
+.download-btn:hover{
+    background-color: #38139e !important;
+    transform: scale(1.05);
+    /* color: black !important; */
+}
+
+
+#download-resume{
+    max-height: 100px !important;
+    overflow: hidden !important;
+}
+
+.react-pdf__Page__canvas{
+    width: 24em !important;
+    height: 30em !important;
+}
+
+
+@media screen and (min-width: 800px){
+    .react-pdf__Page__canvas{
+        width: 40em !important;
+        height: 56em !important;
+    }
+}
+
+.download-resume-img{
+    width: 100% !important;
+    height: 100% !important;
+}

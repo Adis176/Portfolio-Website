@@ -1,0 +1,80 @@
+/* Contact.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #fff;
+  }
+  
+  /* Contact Container Styles */
+  .xl-mt-12 {
+    margin-top: 12px;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+  }
+  
+  /* Form Styles */
+  .contact-form {
+    flex: 0.75;
+    background-color: #000;
+    padding: 8px;
+    border-radius: 20px;
+  }
+  
+  .form-label {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-input,
+  .form-textarea {
+    background-color: #333;
+    padding: 12px;
+    margin-bottom: 4px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+  }
+  
+  .form-input::placeholder,
+  .form-textarea::placeholder {
+    color: #888;
+  }
+  
+  .form-textarea {
+    resize: vertical;
+  }
+  
+  .form-button {
+    background-color: #333;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .loading {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Earth Canvas Styles */
+  .earth-canvas {
+    flex: 1;
+    height: auto;
+    min-height: 350px;
+    max-height: 550px;
+  }
+  
