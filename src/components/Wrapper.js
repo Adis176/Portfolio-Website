@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar.js";
 import Footer from "./Footer.js";
-import Particle from "./Particle.tsx";
+import Particle from "./Particlecopy.js";
 import { Container, Row, Col } from "react-bootstrap";
 export default function Wrapper({children}){
     return(
