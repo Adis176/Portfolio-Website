@@ -530,9 +530,23 @@ button:focus {
   }
 }
 
+@media (max-width: 500px){
+  .headings{
+    font-weight: bolder;
+    color: rgb(228, 245, 255) !important;
+    text-align: left !important;
+    font-size: 2em;
+    
+    text-shadow: 0px 0px #fff !important;
+    margin-left: 5px !important; 
+    margin-bottom: 5px !important;
+  }
+}
+
 /* --------- */
 /* About */
 /* --------- */
+
 
 
 

@@ -26,13 +26,12 @@ export default function Timeline(){
         <div className="container bootdey">
             <div className="timeline-card-body">
                 <div className="timeline">
-                  
-                        <div className="timeline-row">
+                    <div className="timeline-row">
                         <FadeInWhenVisible>
                             <div className="timeline-time">
                                 January 2023 - July 2023
                             </div>
-         
+        
                             <div className="timeline-content">
                                 <div className="timeline-title company">
                                     <BusinessIcon className="timeline-icon timeline-reg"/>
@@ -46,7 +45,7 @@ export default function Timeline(){
                                     <LocationOnIcon className="timeline-reg"/>
                                     Pune, Maharashtra, India
                                 </div>
-                               
+                            
                                 <p>Milestone Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar, drag &amp; drop and ion slider.</p>
                                 <div className="">
                                     <span className="badge badge-light">#ReactJS</span>
@@ -56,17 +55,17 @@ export default function Timeline(){
                                     <span className="badge badge-light">#NextJS</span>
                                 </div>
                             </div>
-                            </FadeInWhenVisible>   
-                        </div>
-     
+                        </FadeInWhenVisible>   
+                    </div>
+    
 
-                   
-                        <div className="timeline-row">
+                
+                    <div className="timeline-row">
                         <FadeInWhenVisible>
-                        <div className="timeline-time">
+                            <div className="timeline-time">
                                 January 2023 - July 2023
                             </div>
-         
+        
                             <div className="timeline-content">
                                 <div className="timeline-title company">
                                     <BusinessIcon className="timeline-icon timeline-reg"/>
@@ -78,9 +77,9 @@ export default function Timeline(){
                                 </div>
                                 <div className="timeline-title ">
                                     <LocationOnIcon className="timeline-reg"/>
-                                   Pune, Maharashtra, India
+                                Pune, Maharashtra, India
                                 </div>
-                               
+                            
                                 <p>Milestone Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar, drag &amp; drop and ion slider.</p>
                                 <div className="">
                                     <span className="badge badge-light">#ReactJS</span>
@@ -90,9 +89,8 @@ export default function Timeline(){
                                     <span className="badge badge-light">#NextJS</span>
                                 </div>
                             </div>
-                            </FadeInWhenVisible>                       
-                        </div>        
-                
+                        </FadeInWhenVisible>                       
+                    </div>        
                 </div>
             </div>
         </div>

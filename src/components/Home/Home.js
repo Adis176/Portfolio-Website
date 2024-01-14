@@ -1,4 +1,4 @@
-import React  from "react";
+import React, {useState, useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import ComputersCanvas from "./Comp/Comp.js";
 // import homeLogo from "../../Assets/home-main.svg";
@@ -35,6 +35,10 @@ function Home() {
     hidden: { x: '100%' },
     visible: { x: 0, transition: { duration: 4, ease: "easeInOut" } },
   };
+  const [width, setWidth] =  useState(window.innerWidth);
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
   return (
     <Wrapper>
     <section>
@@ -60,8 +64,11 @@ function Home() {
             </Col>
 
             <Col xs={11}lg={4} style={{ paddingBottom: 20, display: 'flex', minHeight: '100%'}}>
-              <motion.div className='d-block' variants={variants} initial="hidden" animate="visible" style={{position: 'relative', width: '100%', height: '100%', }}>
-                <E1 />
+              <motion.div className='xs-d-none d-block' variants={variants} initial="hidden" animate="visible" style={{position: 'relative', width: '100%', height: '100%', }}>
+                {
+                  width>=500 &&
+                  <E1 />
+                }
               </motion.div>
             </Col>
             
