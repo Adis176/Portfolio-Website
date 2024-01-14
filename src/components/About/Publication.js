@@ -1,10 +1,10 @@
 import React from "react";
 import {Card} from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 import "./Publication.css";
 export default function Cards(props){
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     return(
         <Card className=" pub-card" >

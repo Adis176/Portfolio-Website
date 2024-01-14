@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Wrapper from "../Wrapper.js";
 // import Particle from "../Particle.tsx";
-import Techstack from "./Techstack.js";
+// import Techstack from "./Techstack.js";
 import Aboutcard from "./AboutCard";
 // import laptopImg from "../../Assets/sukrut_square.jpg";
 import Tilt from "react-parallax-tilt";

@@ -1,4 +1,4 @@
-import React, {ReactDOM} from "react";
+import React  from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import ComputersCanvas from "./Comp/Comp.js";
 // import homeLogo from "../../Assets/home-main.svg";
