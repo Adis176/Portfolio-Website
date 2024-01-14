@@ -69,11 +69,10 @@ function About() {
         </Row>
         <Row>
           <h2 className="headings">Publications.</h2>
-          <Container >
-            <Row xs={1} sm={2} md={3} lg={4} xl={5} className='about-pub-container' style={{display: 'flex', justifyContent: 'space-around', border: '0px '}}>
+          <Container fluid style={{padding: '0px', display: 'flex', margin: '0px', justifyContent: 'center'}}>
+            <Row xs={1} sm={2} md={3} lg={4} xl={5} className='about-pub-container' style={{display: 'flex', justifyContent: 'space-evenly', border: '0px '}}>
               {
                 pubList.map((ele, index) => (
-             
                   <motion.div
                   initial="hidden"
                   whileInView="visible"
