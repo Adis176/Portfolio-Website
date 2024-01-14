@@ -1,33 +1,33 @@
 import React, {ReactDOM} from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ComputersCanvas from "./Comp/Comp.js";
-import homeLogo from "../../Assets/home-main.svg";
-import Particle from "../Particle.tsx";
+// import ComputersCanvas from "./Comp/Comp.js";
+// import homeLogo from "../../Assets/home-main.svg";
+// import Particle from "../Particle.tsx";
 import Home2 from "./Home2";
 import Type from "./Type";
 import Techstack from "../About/Techstack.js";
 import Wrapper from "../Wrapper.js";
 // import Cube from "../Earth/Cube.js"
-import Contact from "./Contact.js";
+// import Contact from "./Contact.js";
 import Timeline from "./Timeline.js";
 import { motion } from "framer-motion";
 import E1 from "../GetInTouch/Earth/E1.js";
-function FadeInWhenVisible({ children }) {
-  return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      transition={{ duration: 1 }}
-      variants={{
-        visible: { opacity: 1, scale: 1 },
-        hidden: { opacity: 0, scale: 0 }
-      }}
-    >
-      {children}
-    </motion.div>
-  );
-}
+// function FadeInWhenVisible({ children }) {
+//   return (
+//     <motion.div
+//       initial="hidden"
+//       whileInView="visible"
+//       viewport={{ once: true }}
+//       transition={{ duration: 1 }}
+//       variants={{
+//         visible: { opacity: 1, scale: 1 },
+//         hidden: { opacity: 0, scale: 0 }
+//       }}
+//     >
+//       {children}
+//     </motion.div>
+//   );
+// }
 
 
 function Home() {

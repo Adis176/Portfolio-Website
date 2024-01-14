@@ -5,7 +5,6 @@ import { ImPointRight } from "react-icons/im";
 function AboutCard() {
   return (
     <Card className="quote-card-view" >
-   
       <Card.Body>
       <h1 style={{ fontSize: "2.1em", paddingBottom: "20px", textAlign: 'left'}}>
                   Know Who <strong className="purple">I'm</strong>
@@ -33,7 +32,6 @@ function AboutCard() {
               <ImPointRight /> Hiking
             </li>
           </ul>
-          
         </blockquote>
       </Card.Body>
     </Card>

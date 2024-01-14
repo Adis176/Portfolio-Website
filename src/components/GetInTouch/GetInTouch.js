@@ -1,21 +1,21 @@
 import React, {useState} from "react";
-import {motion} from "framer-motion";
+// import {motion} from "framer-motion";
 import Form from 'react-bootstrap/Form'; 
 import Button from 'react-bootstrap/Button'; 
 import {Container, Col, Row} from "react-bootstrap";
 import Wrapper from "../Wrapper.js";
 // import Particle from "../Particle.tsx";
-import E1 from "./Earth/E1.js";
+// import E1 from "./Earth/E1.js";
 import "./GetInTouch.css";
-import ComputersCanvas from "../Home/Comp/Comp.js";
+// import ComputersCanvas from "../Home/Comp/Comp.js";
 
 export default function GetInTouch(){
-    const [name, setName] = useState('');
+    // const [name, setName] = useState('');
     
-    const variants = {
-      hidden: { x: '100%' },
-      visible: { x: 0, transition: { duration: 4, ease: "easeInOut" } },
-    };
+    // const variants = {
+    //   hidden: { x: '100%' },
+    //   visible: { x: 0, transition: { duration: 4, ease: "easeInOut" } },
+    // };
     return(
       <Wrapper>
         <div className='contact-disp'  >

@@ -1,10 +1,10 @@
 // import Resume from "../../Assets/Pdfs/Aditya_Gandhi_Resume.pdf";
 import React from "react";
 import Wrapper from "../Wrapper.js";
-import Particle from "../Particle.tsx";
+// import Particle from "../Particle.tsx";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { AiOutlineArrowDown } from "react-icons/ai";
-import Resume from "../../Assets/Images/Aditya_Resume.png";
+// import Resume from "../../Assets/Images/Aditya_Resume.png";
 import AdityaResume from "../../Assets/Images/Aditya_Gandhi_Resume.png";
 import "./download.css";
 // import Wrapper from "../Wrapper.js";
@@ -13,7 +13,7 @@ import "./download.css";
 export default function Download(){
     const Resume2 = require("../../Assets/Pdfs/Aditya_Gandhi_Resume.pdf");
 
-    const pdfUrl = "../../Assets/Pdfs/Aditya_Gandhi_Resume.pdf";
+    // const pdfUrl = "../../Assets/Pdfs/Aditya_Gandhi_Resume.pdf";
     const onButtonClick = () => {
         const pdfUrl2 = Resume2;
         const link = document.createElement("a");

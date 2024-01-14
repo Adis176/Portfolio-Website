@@ -1,34 +1,34 @@
 import React, {useState, useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Wrapper from "../Wrapper.js";
-import Particle from "../Particle.tsx";
+// import Particle from "../Particle.tsx";
 import Techstack from "./Techstack.js";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/sukrut_square.jpg";
+// import laptopImg from "../../Assets/sukrut_square.jpg";
 import Tilt from "react-parallax-tilt";
 import Publication from "./Publication.js";
 import { publicationList } from "../../data/publicationList.js";
 import {motion} from 'framer-motion';
-import Info from "./Info.js";
-import Uni from "./Uni.js";
+// import Info from "./Info.js";
+// import Uni from "./Uni.js";
 import Edu from "./Edu.js";
 import gt2 from "../../Assets/Images/Unis/gt2.png";
-import gt3 from "../../Assets/Images/Unis/gt3.png";
+// import gt3 from "../../Assets/Images/Unis/gt3.png";
 import gt4 from "../../Assets/Images/Unis/gt4.png";
-import pdeu1 from "../../Assets/Images/Unis/pdeu1.png";
+// import pdeu1 from "../../Assets/Images/Unis/pdeu1.png";
 import pdeu2 from "../../Assets/Images/Unis/pdeu2.png";
-import pdeu3 from "../../Assets/Images/Unis/pdeu3.png";
+// import pdeu3 from "../../Assets/Images/Unis/pdeu3.png";
 import pdeu4 from "../../Assets/Images/Unis/pdeu4.png";
-import LeetcodeStreak from "../../Assets/Images/Leetcode/lc_2023.jpg";
-import Badge from "./Badge.js";
-import Knight from "../../Assets/Images/Leetcode/lc-knight2.png";
-import Tdays from "../../Assets/Images/Leetcode/3002.png";
+// import LeetcodeStreak from "../../Assets/Images/Leetcode/lc_2023.jpg";
+// import Badge from "./Badge.js";
+// import Knight from "../../Assets/Images/Leetcode/lc-knight2.png";
+// import Tdays from "../../Assets/Images/Leetcode/3002.png";
 import Aditya from "../../Assets/Images/Aditya.png";
 import "./About.css";
 
 function About() {
   const [pubList, setPubList] = useState(publicationList);
-  const pubsList = publicationList;
+  // const pubsList = publicationList;
   useEffect(() => {
     setPubList(publicationList);
     console.log(pubList);
@@ -38,7 +38,6 @@ function About() {
       <Container fluid className="about-section" style={{  display: 'flex', flexDirection: 'column'}}>
         <Row>
           <Container className="about-cont">
-            {/* <Row style={{ justifyContent: "center", padding: "10px" }}> */}
             <Row style={{ padding: "10px" }}>
               <Col
                 md={7}
@@ -46,9 +45,8 @@ function About() {
                   paddingTop: "30px",
                   paddingBottom: "50px",
                 }}
-              >
-                
-                <Aboutcard />
+              >  
+              <Aboutcard />
               </Col>
               <Col
                 md={5}
@@ -85,19 +83,15 @@ function About() {
                   } } key={index} >
                     <Publication title={ele.title} desc={ele.desc} src={ele.src} link={ele.link}/>
                   </motion.div>
-                    
-        
                 ))
               }
             </Row>
           </Container>
         </Row>
-
         <br />
         <br />
         <br />
         <br />
-        
         <h2 className="headings">Education.</h2>
         <Row xs={2} sm={3} md={4} lg={5} className='about-pub-container' >
           <Col xs={11} sm={10} md={9} lg={9} xl={5}>
@@ -123,13 +117,6 @@ function About() {
             </motion.div>
           </Col>
         </Row>
-
-        {/* <br />
-        <h2 className="headings">Leetcode.</h2>
-        <Row xs={1} sm={2} md={3} className="about-pub-container" style={{display: 'flex', justifyContent: 'center'}}>
-          <img src={LeetcodeStreak} alt="Leetcode Streaks" style={{width: '60%', height: '18%'}}/> <Info />
-         
-        </Row> */}
       </Container>
     </Wrapper>
   );

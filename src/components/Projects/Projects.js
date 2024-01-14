@@ -3,9 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Wrapper from "../Wrapper.js";
 import { projectsList } from "../../data/projectsList.js";
-import Particle from "../Particle.tsx";
+// import Particle from "../Particle.tsx";
 // import { DiJsBadge, DiReact, DiNodejs, DiCss3, DiHtml5 } from "react-icons/di";
-import { SiRedux } from "react-icons/si";
+// import { SiRedux } from "react-icons/si";
 
 function Projects() {
 	return (

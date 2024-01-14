@@ -5,12 +5,19 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
-  AiFillCodeSandboxCircle,
   AiOutlineDownload,
   AiOutlineCluster,
   AiOutlineUser,
   AiOutlineMessage
 } from "react-icons/ai";
+// import {
+//   AiOutlineHome,
+//   AiFillCodeSandboxCircle,
+//   AiOutlineDownload,
+//   AiOutlineCluster,
+//   AiOutlineUser,
+//   AiOutlineMessage
+// } from "react-icons/ai";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);

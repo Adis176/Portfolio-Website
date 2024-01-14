@@ -1,6 +1,6 @@
 import "./Timeline.css"
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 import BusinessIcon from '@mui/icons-material/Business';
 import LocationOnIcon from '@mui/icons-material/LocationOn';

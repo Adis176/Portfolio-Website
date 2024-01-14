@@ -6,10 +6,10 @@ import About from "./components/About/About";
 import Footer from "./components/Footer";
 import Rough1 from "./components/Rough.js/rough1";
 import Download from "./components/Downloads/download";
-import KnowMe from "./components/KnowMe/KnowMe";
+// import KnowMe from "./components/KnowMe/KnowMe";
 import Projects from "./components/Projects/Projects";
 import GetInTouch from "./components/GetInTouch/GetInTouch";
-import Wrapper from "./components/Wrapper";
+// import Wrapper from "./components/Wrapper";
 
 import {
   BrowserRouter as Router,

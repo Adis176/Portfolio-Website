@@ -36,9 +36,9 @@ export default function Constant() {
   //       import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
   //       {
   //         from_name: form.name,
-  //         to_name: "Hasan",
+  //         to_name: "Aditya",
   //         from_email: form.email,
-  //         to_email: "purposework159@gmail.com",
+  //         to_email: "adityagandhi176@gmail.com",
   //         message: form.message,
   //       },
   //       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY

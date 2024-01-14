@@ -1,5 +1,5 @@
 import React from "react";
-import ISourceOptions from 'react-tsparticles';
+// import ISourceOptions from 'react-tsparticles';
 import Particles from 'react-tsparticles';
 import "./Particles.css"
   const options= {
