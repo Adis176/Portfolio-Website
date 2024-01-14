@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Wrapper from "../Wrapper.js";
 // import Particle from "../Particle.tsx";
@@ -29,10 +29,10 @@ import "./About.css";
 function About() {
   const [pubList, setPubList] = useState(publicationList);
   // const pubsList = publicationList;
-  useEffect(() => {
-    setPubList(publicationList);
-    console.log(pubList);
-  }, []);
+  // useEffect(() => {
+  //   setPubList(publicationList);
+  //   console.log(pubList);
+  // }, []);
   return (
     <Wrapper>
       <Container fluid className="about-section" style={{  display: 'flex', flexDirection: 'column'}}>
