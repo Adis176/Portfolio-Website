@@ -27,7 +27,7 @@ import Aditya from "../../Assets/Images/Aditya.png";
 import "./About.css";
 
 function About() {
-  const [pubList, setPubList] = useState(publicationList);
+  const pubList = (publicationList);
   // const pubsList = publicationList;
   // useEffect(() => {
   //   setPubList(publicationList);

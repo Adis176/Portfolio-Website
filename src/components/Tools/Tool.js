@@ -1,7 +1,7 @@
 import React from "react";
-import { DiVim } from "react-icons/di";
+// import { DiVim } from "react-icons/di";
 import "./tool.css"
-import Canva from "../../Assets/Images/Tools/canva.png";
+// import Canva from "../../Assets/Images/Tools/canva.png";
 import Figma from "../../Assets/Images/Tools/figma.png";
 
 export default function Tool(){

@@ -143,17 +143,17 @@
 .timeline-row:nth-child(even) .timeline-content {
     background-color: rgb(30, 23, 67); /* Slightly darker indigo background color */
     /* Fallback Color */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#2c1a8c), to(#947cd2));
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#2c1a8c), to(#947cd2)); */
     /* Saf4+, Chrome */
-    background-image: -webkit-linear-gradient(top, #21117c, #947cd2);
+    background-image: -webkit-linear-gradient(to top, #21117c, #947cd2);
     /* Chrome 10+, Saf5.1+, iOS 5+ */
-    background-image: -moz-linear-gradient(top, #150768, #947cd2);
+    background-image: -moz-linear-gradient(to top, #150768, #947cd2);
     /* FF3.6 */
-    background-image: -ms-linear-gradient(top, #21117c, #947cd2);
+    background-image: -ms-linear-gradient(to top, #21117c, #947cd2);
     /* IE10 */
-    background-image: -o-linear-gradient(top, #140760, #947cd2);
+    background-image: -o-linear-gradient(to top, #140760, #947cd2);
     /* Opera 11.10+ */
-    background-image: linear-gradient(top, #120653, #947cd2);
+    background-image: linear-gradient(to top, #120653, #947cd2);
     margin-left: 40px;
     margin-right: 0;
     text-align: left;
@@ -201,17 +201,17 @@
 .timeline-row:nth-child(odd) .timeline-content {
     background-color: rgb(30, 23, 67); /* Slightly darker indigo background color */
     /* Fallback Color */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#2c1a8c), to(#947cd2));
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#2c1a8c), to(#947cd2)); */
     /* Saf4+, Chrome */
-    background-image: -webkit-linear-gradient(top, #21117c, #947cd2);
+    background-image: -webkit-linear-gradient(to top, #21117c, #947cd2);
     /* Chrome 10+, Saf5.1+, iOS 5+ */
-    background-image: -moz-linear-gradient(top, #150768, #947cd2);
+    background-image: -moz-linear-gradient(to top, #150768, #947cd2);
     /* FF3.6 */
-    background-image: -ms-linear-gradient(top, #21117c, #947cd2);
+    background-image: -ms-linear-gradient(to top, #21117c, #947cd2);
     /* IE10 */
-    background-image: -o-linear-gradient(top, #140760, #947cd2);
+    background-image: -o-linear-gradient(to top, #140760, #947cd2);
     /* Opera 11.10+ */
-    background-image: linear-gradient(top, #120653, #947cd2);
+    background-image: linear-gradient(to top, #120653, #947cd2);
     margin-right: 40px;
     margin-left: 0;
     text-align: right;
