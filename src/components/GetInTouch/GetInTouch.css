@@ -13,14 +13,14 @@
     /* background-color: aqua; */
 }
 .contact-container{
-    min-width: 26em !important ;
+    min-width: 23em !important ;
     padding: 1.5em 0.75em !important;
-    padding-left: 1.4em !important;
+    padding-left: 0.8em !important;
     
     display: flex !important;
-    margin: 5em !important ;
+    margin-top: 5em !important ;
     /* justify-content: space-between !important; */
-    background-color: rgb(16, 13, 37);
+    background-color: rgb(23, 24, 67);
     /* background-color: aqua !important; */
     color: rgb(252, 252, 252) !important;
     /* opacity: 0.9 !important; */
@@ -32,15 +32,15 @@
 }
 
 .contact-main-title{
-    margin-bottom: 0.7em !important;
+    margin-bottom: 0.4em !important;
     margin-left: -0.1em !important;
 }
 
 .contact-input{
-    background-color: rgb(30, 23, 67) !important;
+    background-color: rgb(16, 13, 37) !important;
     color: rgb(224, 222, 242)!important;  /* Set the color to your desired value */
     font-size: 1.1em !important;
-    width: 20em !important;
+    width: 18em !important;
     border: 0px !important;
 }
 
@@ -63,4 +63,16 @@
     /* box-shadow:  2px 8px 10px rgba(0, 0, 0, 0.6), 0 4px 20px 2px rgba(120, 120, 120, 0.39) !important; */
     border: 1px solid rgb(170, 166, 195, 0.3) !important;
     margin-bottom: 0px !important;
+}
+
+@media (max-width: 400px) {
+    .contact-container{
+        min-width: 17em !important;
+        padding: 1em 0.5em !important;
+
+    }
+    .contact-input{
+        width: 14em !important;
+        font-size: 1em !important;
+    }
 }

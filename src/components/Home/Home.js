@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 // import ComputersCanvas from "./Comp/Comp.js";
 // import homeLogo from "../../Assets/home-main.svg";
 // import Particle from "../Particle.tsx";
-import Home2 from "./Home2";
+// import Home2 from "./Home2";
 import Type from "./Type";
 import Techstack from "../About/Techstack.js";
 import Tools from "./Tools.js";
