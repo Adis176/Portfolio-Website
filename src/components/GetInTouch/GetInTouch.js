@@ -36,7 +36,7 @@ export default function GetInTouch(){
                         </Form.Group> 
                         <Form.Group> 
                           <Form.Label>Email</Form.Label> 
-                          <Form.Control className="contact-input"  type="email" placeholder="Enter your your email address" /> 
+                          <Form.Control className="contact-input"  type="email" placeholder="Enter your email address" /> 
                         </Form.Group> 
                         <Form.Group> 
                           <Form.Label>Message</Form.Label> 

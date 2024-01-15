@@ -13,7 +13,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Aditya Gandhi </span>
             from <span className="purple"> Gujarat, India.</span>
-            <br /> I am a First Year student pursuing his Masters
+            <br /> I am a First Year student, pursuing my Masters
             in Computer Science at <span className="purple">Georgia Institute of Technology.</span>
             <br />
             Additionally, I am enthusiastic about <span className="purple">Web-development, System Design, Algorithms & Problem-Solving.</span>

@@ -13,12 +13,15 @@ import {motion} from 'framer-motion';
 // import Uni from "./Uni.js";
 import Edu from "./Edu.js";
 import gt2 from "../../Assets/Images/Unis/gt2.png";
-// import gt3 from "../../Assets/Images/Unis/gt3.png";
+import gt3 from "../../Assets/Images/Unis/gt3.png";
 import gt4 from "../../Assets/Images/Unis/gt4.png";
 // import pdeu1 from "../../Assets/Images/Unis/pdeu1.png";
 import pdeu2 from "../../Assets/Images/Unis/pdeu2.png";
 // import pdeu3 from "../../Assets/Images/Unis/pdeu3.png";
 import pdeu4 from "../../Assets/Images/Unis/pdeu4.png";
+// import pdeu5 from "../../Assets/Images/Unis/pdeu5.png";
+// import pdeu6 from "../../Assets/Images/Unis/pdeu6.jpg";
+import pdeu7 from "../../Assets/Images/Unis/pdeu7.jpeg";
 // import LeetcodeStreak from "../../Assets/Images/Leetcode/lc_2023.jpg";
 // import Badge from "./Badge.js";
 // import Knight from "../../Assets/Images/Leetcode/lc-knight2.png";
@@ -101,7 +104,7 @@ function About() {
                 hidden: { opacity: 0, x: -50 },
                 visible: { opacity: 1, x: 0, transition: { delay: 0.5, ease: "easeInOut" } },
               }}>
-                <Edu name={'Georgia Institute of Technology'} imgsrc={gt4} degree={'Masters:'} specialization={'Computer Science'} imgbg={gt2} cgpa={'4.0 / 4.0'} location={'Atlanta, Georgia, USA'} sub={'Database System Concepts & Design, Network Security'}/>
+                <Edu name={'Georgia Institute of Technology'} imgsrc={gt3} degree={'Masters:'} specialization={'Computer Science'} imgbg={gt2} cgpa={'4.0 / 4.0'} location={'Atlanta, Georgia, USA'} sub={'Database System Concepts & Design, Network Security'}/>
               </motion.div>
           </Col>
           <Col xs={11} sm={10}   lg={9} xl={5}>
@@ -112,7 +115,7 @@ function About() {
                       hidden: { opacity: 0, x: 50 },
                       visible: { opacity: 1, x: 0, transition: { delay: 0.5, ease: "easeInOut" } },
                     }}>
-                <Edu name={'Pandit Deendayal Energy University'} imgsrc={pdeu2} degree={'Bachelors:'} specialization={'Computer Engineering'} imgbg={pdeu4} cgpa={'9.86 / 10.0'} location={'Gandhinagar, Gujarat, India'} sub={'AI, ML, Design & Analysis of Algorithms, Advanced Web-dev, Cloud Computing'}/>
+                <Edu name={'Pandit Deendayal Energy University'} imgsrc={pdeu7} degree={'Bachelors:'} specialization={'Computer Engineering'} imgbg={pdeu4} cgpa={'9.86 / 10.0'} location={'Gandhinagar, Gujarat, India'} sub={'AI, ML, Design & Analysis of Algorithms, Advanced Web-dev, Cloud Computing'}/>
               </motion.div>
           </Col>
         </Row>
