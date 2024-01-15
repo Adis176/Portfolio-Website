@@ -107,7 +107,7 @@ function About() {
                 <Edu name={'Georgia Institute of Technology'} imgsrc={gt3} degree={'Masters:'} specialization={'Computer Science'} imgbg={gt2} cgpa={'4.0 / 4.0'} location={'Atlanta, Georgia, USA'} sub={'Database System Concepts & Design, Network Security'}/>
               </motion.div>
           </Col>
-          <Col xs={11} sm={10}   lg={9} xl={5}>
+          <Col xs={11} sm={10}   lg={9} xl={5} style={{padding: '0px', margin: '0px'}} className="about-pub-pad">
             <motion.div
                     initial="hidden"
                     whileInView="visible"
