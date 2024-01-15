@@ -61,7 +61,7 @@ function About() {
                 className="about-img circular-image"
               >
                 <Tilt>
-                <img src={Aditya} alt="about" className="img-fluid rounded-circle" />
+                  <img src={Aditya} alt="about" className="img-fluid rounded-circle" />
                 </Tilt>
               </Col>
             </Row>
@@ -92,28 +92,28 @@ function About() {
         <br />
         <br />
         <h2 className="headings">Education.</h2>
-        <Row xs={2} sm={3} md={4} lg={5} className='about-pub-container' >
-          <Col xs={11} sm={10} md={9} lg={9} xl={5}>
-          <motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  variants={  {
-                    hidden: { opacity: 0, x: -50 },
-                    visible: { opacity: 1, x: 0, transition: { delay: 0.5, ease: "easeInOut" } },
-                  } }  >
-            <Edu name={'Georgia Institute of Technology'} imgsrc={gt4} degree={'Masters:'} specialization={'Computer Science'} imgbg={gt2} cgpa={'4.0 / 4.0'} location={'Atlanta, Georgia, USA'} sub={'Database System Concepts & Design, Network Security'}/>
-            </motion.div>
+        <Row xs={2} sm={5}  lg={5} className='about-pub-container' >
+          <Col xs={11} sm={10}   lg={9} xl={5} style={{padding: '0px', margin: '0px'}} className="about-pub-pad">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0, transition: { delay: 0.5, ease: "easeInOut" } },
+              }}>
+                <Edu name={'Georgia Institute of Technology'} imgsrc={gt4} degree={'Masters:'} specialization={'Computer Science'} imgbg={gt2} cgpa={'4.0 / 4.0'} location={'Atlanta, Georgia, USA'} sub={'Database System Concepts & Design, Network Security'}/>
+              </motion.div>
           </Col>
-          <Col xs={11} sm={10} md={9} lg={9} xl={5}>
-          <motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  variants={  {
-                    hidden: { opacity: 0, x: 50 },
-                    visible: { opacity: 1, x: 0, transition: { delay: 0.5, ease: "easeInOut" } },
-                  } }  >
-            <Edu name={'Pandit Deendayal Energy University'} imgsrc={pdeu2} degree={'Bachelors:'} specialization={'Computer Engineering'} imgbg={pdeu4} cgpa={'9.86 / 10.0'} location={'Gandhinagar, Gujarat, India'} sub={'AI, ML, Design & Analysis of Algorithms, Advanced Web-dev, Cloud Computing'}/>
-            </motion.div>
+          <Col xs={11} sm={10}   lg={9} xl={5}>
+            <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={{
+                      hidden: { opacity: 0, x: 50 },
+                      visible: { opacity: 1, x: 0, transition: { delay: 0.5, ease: "easeInOut" } },
+                    }}>
+                <Edu name={'Pandit Deendayal Energy University'} imgsrc={pdeu2} degree={'Bachelors:'} specialization={'Computer Engineering'} imgbg={pdeu4} cgpa={'9.86 / 10.0'} location={'Gandhinagar, Gujarat, India'} sub={'AI, ML, Design & Analysis of Algorithms, Advanced Web-dev, Cloud Computing'}/>
+              </motion.div>
           </Col>
         </Row>
       </Container>

@@ -26,7 +26,7 @@ function ProjectCards(props) {
         {props.link && <Button
           style={{ margin: "0.5rem", marginBottom: '0em'}}
           variant="primary"
-          href={props.git}
+          href={props.link}
           target="_blank"
         >
           <FiGithub /> &nbsp; View on GitHub

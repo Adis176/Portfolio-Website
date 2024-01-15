@@ -31,8 +31,7 @@
     top: 2em;
     text-align: right;
     margin-right: 1.25em;
-    font-size: 1.5rem;
-    
+    font-size: 1.5rem;   
 }
 
 
@@ -54,7 +53,6 @@
     top: 1.25em;
     height: 3px;
     width: 2.5em;
-
 }
 
 .timeline-title{
@@ -185,9 +183,7 @@
     background-image: -o-linear-gradient(to top, #140760, #7ca4d2);
     /* Opera 11.10+ */
     background-image: linear-gradient(to top, #120653, #7ca4d2);
-    margin-right: 2.5em;
-    margin-left: 0;
-    text-align: right;
+ 
     opacity: 0.9;
 }
 
@@ -262,6 +258,20 @@
     .timeline-content::after{
         display: none !important;
     }
+    .timeline-title{
+        text-align: left !important;
+        align-items: left !important;
+        flex-direction: row !important;
+    }
+    .timeline-content{
+        align-items: left !important;
+        text-align: left !important;    
+    }
+    .timeline-reg{
+        margin-left: 0px !important;
+        margin-right: 0.4em !important;
+    }
+  
 }
 
 @media (max-width: 500px) {
@@ -281,6 +291,33 @@
     .company{
         font-weight: 700 !important;
         font-size: 1.3em !important;
+    }
+
+
+}
+
+
+
+
+@media (min-width: 1000px){
+    .timeline-row:nth-child(odd) .timeline-content {
+        background-color: rgb(30, 23, 67); /* Slightly darker indigo background color */
+        /* Fallback Color */
+        /* background-image: -webkit-gradient(linear, left top, left bottom, from(#2c1a8c), to(#947cd2)); */
+        /* Saf4+, Chrome */
+        background-image: -webkit-linear-gradient(to top, #21117c, #7ca4d2);
+        /* Chrome 10+, Saf5.1+, iOS 5+ */
+        background-image: -moz-linear-gradient(to top, #150768, #7ca4d2);
+        /* FF3.6 */
+        background-image: -ms-linear-gradient(to top, #21117c, #7ca4d2);
+        /* IE10 */
+        background-image: -o-linear-gradient(to top, #140760, #7ca4d2);
+        /* Opera 11.10+ */
+        background-image: linear-gradient(to top, #120653, #7ca4d2);
+        margin-right: 2.5em;
+        margin-left: 0;
+        text-align: right;
+        opacity: 0.9;
     }
 
 

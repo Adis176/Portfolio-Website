@@ -23,7 +23,7 @@ export let projectsList = [
         desc: ['Chrome extension for site blocking, content filtering, and timed limits utilizing Chrome APIs, local Storage & JavaScript. Implemented lightweight JavaScript and jQuery functions, utilizing existing APIs to efficiently fetch real-time metrics, and thus assess SEO characteristics'],
         title: 'Productivity Booster Chrome Extension',
         tech : 'HTML | CSS | Js | Chrome APIs',
-        link: 'https://www.researchgate.net/publication/364583692_Cardiovascular_Disease_Prediction_using_Various_Machine_Learning_Algorithms',
+        link: 'https://github.com/Adis176/Rebooster-Chrome-extension-profuctivity-booster',
         demo: ''
     },
     {

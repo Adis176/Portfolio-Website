@@ -31,8 +31,8 @@ export default function Download(){
                     <Button size="lg" variant="primary" className="download-btn" style={{zIndex: '9999'}} onClick={onButtonClick}><AiOutlineArrowDown/> Download</Button>
                 </Col>
             </Row>
-            <Row xs={11} style={{justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
-                <Col xs={10} md={9} style={{justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '2.5em'}}>
+            <Row xs={12} style={{justifyContent: 'center', alignItems: 'center', display: 'flex' }}>
+                <Col xs={12} md={10} lg={9} style={{justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '2.5em'}}>
                     <img src={AdityaResume} alt="Aditya_Resume" className="download-resume-img"/>
                 </Col>
             </Row>

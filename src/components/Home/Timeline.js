@@ -46,13 +46,16 @@ export default function Timeline(){
                                     Pune, Maharashtra, India
                                 </div>
                             
-                                <p>Milestone Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar, drag &amp; drop and ion slider.</p>
+                                <p>Designed a responsive website for Yogyata company with dark mode, using NextJS.
+Developed an admin portal for company publicity and broadcasting its courses,
+along with API Integration, using ReactJS framework. Utilized AWS platform for efficient resource handling</p>
                                 <div className="">
                                     <span className="badge badge-light">#ReactJS</span>
                                     <span className="badge badge-light">#NextJS</span>
                                     <span className="badge badge-light">#SCSS</span>
                                     <span className="badge badge-light">#AWS S3</span>
-                                    <span className="badge badge-light">#NextJS</span>
+                                    <span className="badge badge-light">#NodeJS</span>
+                                    <span className="badge badge-light">#REST API</span>
                                 </div>
                             </div>
                         </FadeInWhenVisible>   
@@ -63,30 +66,30 @@ export default function Timeline(){
                     <div className="timeline-row">
                         <FadeInWhenVisible>
                             <div className="timeline-time">
-                                January 2023 - July 2023
+                                May 2022 - July 2022
                             </div>
         
                             <div className="timeline-content">
                                 <div className="timeline-title company">
                                     <BusinessIcon className="timeline-icon timeline-reg"/>
-                                    Cling Multi-Solutions
+                                    eInfoChips
                                 </div>
                                 <div className="timeline-title ">
                                     <WorkspacePremiumIcon className="timeline-reg"/>
-                                    SDE Intern 
+                                    Summer Intern 
                                 </div>
                                 <div className="timeline-title ">
                                     <LocationOnIcon className="timeline-reg"/>
-                                Pune, Maharashtra, India
+                                    Remote
                                 </div>
                             
-                                <p>Milestone Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar, drag &amp; drop and ion slider.</p>
+                                <p> Worked on SEO Optimization to achieve higher search rank by employing Django & ReactJS.
+• Worked on an analytic dashboard that keeps track of search words for future utilization to increase traffic</p>
                                 <div className="">
                                     <span className="badge badge-light">#ReactJS</span>
-                                    <span className="badge badge-light">#NextJS</span>
-                                    <span className="badge badge-light">#SCSS</span>
-                                    <span className="badge badge-light">#AWS S3</span>
-                                    <span className="badge badge-light">#NextJS</span>
+                                    <span className="badge badge-light">#JavaScript</span>
+                                    <span className="badge badge-light">#Python</span>
+                                    <span className="badge badge-light">#Django</span>
                                 </div>
                             </div>
                         </FadeInWhenVisible>                       

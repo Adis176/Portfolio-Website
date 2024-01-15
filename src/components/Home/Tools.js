@@ -2,40 +2,32 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiPython,
-  DiGit,
-  DiJava,
-
-  DiBootstrap,
-  DiCss3,
-  DiHtml5,
-  
-
+    DiVisualstudio,
+    DiWindows,
+    DiPhotoshop,
+    DiGithub,
 } from "react-icons/di";
 
-function Techstack() {
+function Tools() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus className="tech-icons-images" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <DiVisualstudio />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <DiWindows />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <DiPhotoshop />
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <DiGithub />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      {/* <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
       </Col>
       
@@ -51,11 +43,11 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiBootstrap />
-      </Col>
+      </Col> */}
       
       
     </Row>
   );
 }
 
-export default Techstack;
+export default Tools;

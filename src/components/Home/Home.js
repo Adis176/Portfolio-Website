@@ -6,12 +6,19 @@ import { Container, Row, Col } from "react-bootstrap";
 import Home2 from "./Home2";
 import Type from "./Type";
 import Techstack from "../About/Techstack.js";
+import Tools from "./Tools.js";
 import Wrapper from "../Wrapper.js";
 // import Cube from "../Earth/Cube.js"
 // import Contact from "./Contact.js";
 import Timeline from "./Timeline.js";
 import { motion } from "framer-motion";
 import E1 from "../GetInTouch/Earth/E1.js";
+import {
+  AiFillGithub,
+  AiFillInstagram,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+
 // function FadeInWhenVisible({ children }) {
 //   return (
 //     <motion.div
@@ -43,6 +50,7 @@ function Home() {
     <Wrapper>
     <section>
       <Container fluid className="home-section" id="home" style={{paddingLeft: '0px !important',}}>
+        
         <Container className="home-content" style={{}} >
           <Row>
             <Col xs={11} lg={5} className="home-header">
@@ -74,10 +82,8 @@ function Home() {
             
           </Row>
         </Container>
-        <Container style={{margin: '5em 0em'}}>
-          <h2 className="headings" >Skill-Set</h2>
-          <Techstack />
-        </Container>
+          
+        {/* <Home2 /> */}
 
         <Container style={{marginTop: '5em'}}>
           <h2 className="headings" >Work - Experience</h2>
@@ -86,8 +92,68 @@ function Home() {
 
         
       </Container>
-      <Home2 />
       
+      <Container style={{margin: '5em 0em'}}>
+        <h2 className="headings" >Skill-Set</h2>
+        <Techstack />
+      </Container>  
+
+      <Container style={{margin: '5em 0em'}}>
+        <h2 className="headings" >Tools I use</h2>
+        <Tools />
+      </Container>
+      <Container>
+      <Row>
+          <Col md={12} className="home-about-social">
+            <h1>FIND ME ON</h1>
+            <p>
+              Feel free to <span className="purple">connect </span>with me
+            </p>
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://github.com/Adis176"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              {/* <li className="social-icons">
+                <a
+                  href="https://twitter.com/sukrutrahane"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiOutlineTwitter />
+                </a>
+              </li> */}
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/aditya-gandhi-585658191"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.instagram.com/_adii176"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillInstagram />
+                </a>
+              </li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
     </section>
     
     </Wrapper>
