@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import AddTaskIcon from '@mui/icons-material/AddTask';
 import GppGoodIcon from '@mui/icons-material/GppGood';
 import VerifiedIcon from '@mui/icons-material/Verified';
@@ -7,7 +7,6 @@ import StarPurple500Icon from '@mui/icons-material/StarPurple500';
 import "./Info.css"
 
 const Info = () => {
-
   return (
     <div className="info-container" >
         <div className="info-wrapper">
