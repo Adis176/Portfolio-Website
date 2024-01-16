@@ -1,0 +1,42 @@
+.parent-head{
+    display: flex !important;
+    flex-direction: column;
+    max-width: fit-content !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto !important;
+}
+
+.headings{
+    font-weight: bolder;
+    color: rgb(228, 245, 255) !important;
+    /* text-align: left !important; */
+    font-size: 3em;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+    letter-spacing: 2px !important;
+    text-shadow: 2px 0px #fff !important;
+    margin-left: 5px !important; 
+    margin-bottom: 5px !important;
+}
+
+.headings-border{
+    width: 200px !important;
+    border-bottom: 4px solid white !important;
+    margin-bottom: 1em !important;
+}
+
+@media (max-width: 400px){
+    .headings{
+        font-size: 1.4em !important;
+    }
+}
+
+
+@media (max-width: 300px){
+    .headings{
+        font-size: 1.2em !important;
+    }
+}
+
+@media (max-width: 1000px){}

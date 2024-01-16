@@ -27,6 +27,7 @@ import pdeu7 from "../../Assets/Images/Unis/pdeu7.jpeg";
 // import Knight from "../../Assets/Images/Leetcode/lc-knight2.png";
 // import Tdays from "../../Assets/Images/Leetcode/3002.png";
 import Aditya from "../../Assets/Images/Aditya.png";
+import Heading from "../Extra/Heading/Heading.js";
 import "./About.css";
 
 function About() {
@@ -70,8 +71,13 @@ function About() {
             </Row>
           </Container>
         </Row>
+        <br />
+        <br />
+        <br />
+        <br />
         <Row>
-          <h2 className="headings">Publications.</h2>
+
+          <Heading heading={'Publications'} />
           <Container fluid style={{padding: '0px', display: 'flex', margin: '0px', justifyContent: 'center'}}>
             <Row xs={1} sm={2} md={3} lg={4} xl={5} className='about-pub-container' style={{display: 'flex', justifyContent: 'space-evenly', border: '0px '}}>
               {
@@ -94,9 +100,9 @@ function About() {
         <br />
         <br />
         <br />
-        <h2 className="headings">Education.</h2>
-        <Row xs={2} sm={5}  lg={5} className='about-pub-container' >
-          <Col xs={11} sm={10}   lg={9} xl={5} style={{padding: '0px', margin: '0px'}} className="about-pub-pad">
+        <Heading heading={'Education'} />
+        <Row className='about-pub-container' >
+          <Col xs={9} sm={8} md={7}  lg={6} xl={5}  xxl={4} style={{padding: '0px', margin: '0px', marginRight: '2px'}} className="about-pub-pad">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -107,7 +113,7 @@ function About() {
                 <Edu name={'Georgia Institute of Technology'} imgsrc={gt3} degree={'Masters:'} specialization={'Computer Science'} imgbg={gt2} cgpa={'4.0 / 4.0'} location={'Atlanta, Georgia, USA'} sub={'Database System Concepts & Design, Network Security'}/>
               </motion.div>
           </Col>
-          <Col xs={11} sm={10}   lg={9} xl={5} style={{padding: '0px', margin: '0px'}} className="about-pub-pad">
+          <Col xs={9} sm={8}  md={7} lg={6} xl={5}  xxl={4}  style={{padding: '0px', margin: '0px', }} className="about-pub-pad">
             <motion.div
                     initial="hidden"
                     whileInView="visible"

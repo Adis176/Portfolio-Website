@@ -233,20 +233,31 @@
 	}
 	.edu-text{
 		padding: 0px !important;
-		font-size: 0.8em !important;
+		font-size: 0.1em !important;
+		overflow: hidden !important;
+	}
+}
+
+@media (max-width: 1000px){
+	.delay-4{
+		font-size: 0.9em !important;
+	}
+	.edu-text{
+		padding: 0px !important;
+		font-size: 0.9em !important;
 		overflow: hidden !important;
 	}
 }
 
 @media (min-width: 1000px){
 	.edu-text{
-		font-size: 1.6em !important;
+		font-size: 1em !important;
 	}
 	.delay-4{
-		font-size: 1.7em !important;
+		font-size: 1.3em !important;
 	}
 	.delay-5{
-		font-size: 1.4em !important;
+		font-size: 1.2em !important;
 	}
 }
 
@@ -258,6 +269,6 @@
 		font-size: 1.25em !important;
 	}
 	.delay-5{
-		font-size: 1em !important;
+		font-size: 1.15em !important;
 	}
 }

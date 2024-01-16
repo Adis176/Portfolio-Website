@@ -13,6 +13,7 @@ import Wrapper from "../Wrapper.js";
 import Timeline from "./Timeline.js";
 import { motion } from "framer-motion";
 import E1 from "../GetInTouch/Earth/E1.js";
+import Heading from "../Extra/Heading/Heading.js";
 import {
   AiFillGithub,
   AiFillInstagram,
@@ -86,7 +87,9 @@ function Home() {
         {/* <Home2 /> */}
 
         <Container style={{marginTop: '5em'}}>
-          <h2 className="headings" >Work - Experience</h2>
+          <Row>
+            <Heading heading={'Work - Experience'} />
+          </Row>
           <Timeline />
         </Container>
 
@@ -94,12 +97,12 @@ function Home() {
       </Container>
       
       <Container style={{margin: '5em 0em'}}>
-        <h2 className="headings" >Skill-Set</h2>
+      <Heading heading={'Skill - Set'} />
         <Techstack />
       </Container>  
 
       <Container style={{margin: '5em 0em'}}>
-        <h2 className="headings" >Tools I use</h2>
+      <Heading heading={'Tools I Use'} />
         <Tools />
       </Container>
       <Container>

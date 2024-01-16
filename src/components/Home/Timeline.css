@@ -62,9 +62,9 @@
     flex-direction: row-reverse;
     align-items: center;
     padding-bottom: 0.2em;
-    border-bottom: 0.2px solid rgb(104, 148, 236);
+    border-bottom: 0.1px solid rgb(104, 148, 236);
     border-width: 90%;;
-    box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 0px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 0px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 0.5em;
 }
 .timeline-reg{
