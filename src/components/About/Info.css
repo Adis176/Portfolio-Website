@@ -15,15 +15,16 @@ body{
 } */
 
 .info-container{
-  background-color: yellow !important;
+  /* background-color: yellow !important; */
   margin: 1em;
   padding-top: 7.2em;
   width: 100% !important;
   height: 17em;
+  margin-left: 0px !important;
 }
 .info-outer{
   display: flex;
-  background-color: rgb(255, 125, 0) !important;
+  /* background-color: rgb(255, 125, 0) !important; */
   align-items: first baseline;
   padding: 1em !important;
   width: 100% !important;
@@ -96,4 +97,10 @@ body{
   margin-right: 1em;
   width: 1.4em !important;
   height: 1.4em !important;
+}
+
+@media (max-width: 400px){
+  .info-container{
+    display: none;
+  }
 }

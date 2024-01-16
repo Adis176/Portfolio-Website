@@ -22,13 +22,16 @@ import pdeu4 from "../../Assets/Images/Unis/pdeu4.png";
 // import pdeu5 from "../../Assets/Images/Unis/pdeu5.png";
 // import pdeu6 from "../../Assets/Images/Unis/pdeu6.jpg";
 import pdeu7 from "../../Assets/Images/Unis/pdeu7.jpeg";
-// import LeetcodeStreak from "../../Assets/Images/Leetcode/lc_2023.jpg";
-// import Badge from "./Badge.js";
-// import Knight from "../../Assets/Images/Leetcode/lc-knight2.png";
-// import Tdays from "../../Assets/Images/Leetcode/3002.png";
+import LeetcodeStreak1 from "../../Assets/Images/Leetcode/leetcode1.png";
+import LeetcodeStreak2 from "../../Assets/Images/Leetcode/leetcode2.png";
+import Badge from "./Badge.js";
+import Knight from "../../Assets/Images/Leetcode/lc-knight2.png";
+import Tdays from "../../Assets/Images/Leetcode/3002.png";
 import Aditya from "../../Assets/Images/Aditya.png";
 import Heading from "../Extra/Heading/Heading.js";
 import "./About.css";
+import Info from "./Info.js";
+// import { Info } from "@mui/icons-material";
 
 function About() {
   const pubList = (publicationList);
@@ -124,6 +127,20 @@ function About() {
                 <Edu name={'Pandit Deendayal Energy University'} imgsrc={pdeu7} degree={'Bachelors:'} specialization={'Computer Engineering'} imgbg={pdeu4} cgpa={'9.86 / 10.0'} location={'Gandhinagar, Gujarat, India'} sub={'AI, ML, Design & Analysis of Algorithms, Advanced Web-dev, Cloud Computing'}/>
               </motion.div>
           </Col>
+        </Row>
+        <br />
+        <br />
+        <br />
+        <br />
+        <Heading heading={'Leetcode'} />
+        <Row className='about-pub-container' style={{display: 'flex', alignItems: 'center', justifyContent: 'space-evenly'}}>
+            <Col xs={12} lg={6} xl={5} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                <img src={LeetcodeStreak1} alt="Streak" style={{width: '100%', aspectRatio: '100/25', marginBottom: '0.8em', marginRight: '3px'}}/>
+                <img src={LeetcodeStreak2} alt="Streak" style={{width: '100%', aspectRatio: '100/25'}}/>
+            </Col>
+            <Col xs={12} sm={10} md={7} lg={6} xl={4} style={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Info />
+            </Col>
         </Row>
       </Container>
     </Wrapper>

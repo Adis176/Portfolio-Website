@@ -22,7 +22,7 @@ function Footer() {
         </Col>
         <Col md="4" className="footer-copywright">
           {/* <h3>Copyright © {year} Aditya Gandhi</h3> */}
-          <h3>Get-to-know-me: Aditya Gandhi</h3>
+          <h3>Aditya Gandhi</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
