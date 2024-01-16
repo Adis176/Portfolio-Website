@@ -12,9 +12,6 @@ function Tools() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus className="tech-icons-images" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiVisualstudio />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
