@@ -74,8 +74,12 @@ border-radius: 20px;
   
 
 .about-lc-img{
-    width: 10em !important;
-    max-width: 10em !important;
+    width: 100% !important;
+    aspect-ratio: 4/1 !important;
+    margin-bottom: 0.8em !important;
+    margin-right: 3px !important;
+    border-radius: 0.6em !important;
+    border: 1px solid rgb(128, 128, 128, 0.5) !important;
 }
 .about-pub-container{
     margin-left: 0px !important;

@@ -40,7 +40,7 @@ const Info = () => {
                     <div className="info-content">
                         <StarPurple500Icon className='info-icon'/>
                         <div className="details">
-                            Highest LeetCode Rating: 2045
+                            Highest LeetCode Rating: 2080
                         </div>
                     </div>
                 </div>

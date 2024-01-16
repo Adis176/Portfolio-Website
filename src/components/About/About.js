@@ -138,8 +138,22 @@ function About() {
           <Heading heading={'Leetcode'} />
           <Row className='about-pub-container' style={{display: 'flex', alignItems: 'center', justifyContent: 'space-evenly'}}>
               <Col xs={12} lg={6} xl={5} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-                  <img src={LeetcodeStreak1} alt="Streak" style={{width: '100%', aspectRatio: '100/25', marginBottom: '0.8em', marginRight: '3px'}}/>
-                  <img src={LeetcodeStreak2} alt="Streak" style={{width: '100%', aspectRatio: '100/25'}}/>
+                  <motion.div initial="hidden"
+                    whileInView="visible"
+                    variants={{
+                      hidden: { opacity: 0, y: -100 },
+                      visible: { opacity: 1, y: 0, transition: { delay: 0.5, ease: "easeInOut" } },
+                    }}>
+                    <img src={LeetcodeStreak1} alt="Streak" className="about-lc-img" />
+                  </motion.div>
+                  <motion.div initial="hidden"
+                    whileInView="visible"
+                    variants={{
+                      hidden: { opacity: 0, y: 100 },
+                      visible: { opacity: 1, y: 0, transition: { delay: 0.5, ease: "easeInOut" } },
+                    }}>
+                    <img src={LeetcodeStreak2} alt="Streak" className="about-lc-img" />
+                  </motion.div>  
               </Col>
               <Col xs={12} sm={10} md={7} lg={6} xl={4} style={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <Info />
