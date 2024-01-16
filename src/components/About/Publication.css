@@ -184,11 +184,31 @@ p.pub-back{
   background-color: rgb(0, 0, 0) !important;
 }
 
+
+@media (max-width: 580px){
+  .pub-card{
+    width: 100% !important;
+    /* margin : 2.4em !important; */
+    padding-left: 7.5em  ;
+    padding-right: 7.5em  ;
+  }
+}
+
+@media (max-width: 480px){
+  .pub-card{
+    width: 100% !important;
+    /* margin : 2.4em !important; */
+    padding-left: 5.5em  ;
+    padding-right: 5.5em  ;
+  }
+}
+
 @media (max-width: 400px){
   .pub-card{
     width: 90% !important;
     /* margin : 1em !important; */
-    padding: 1em !important;
+    padding-left: 2.4em !important;
+    padding-right: 1.4em !important;
   }
   .pub-back{
     /* padding: 1em !important; */
@@ -197,12 +217,5 @@ p.pub-back{
 
 }
 
-@media (max-width: 580px){
-  .pub-card{
-    width: 90% !important;
-    margin : 2.4em !important;
-    padding: 2.4em !important;
-  }
 
 
-}

@@ -81,7 +81,7 @@ function About() {
         <Row>
 
           <Heading heading={'Publications'} />
-          <Container fluid style={{padding: '0px', display: 'flex', margin: '0px', justifyContent: 'center'}}>
+          <Container fluid style={{padding: '0px', display: 'flex', margin: '0px', justifyContent: 'center', alignItems: 'center'}}>
             <Row xs={1} sm={2} md={3} lg={4} xl={5} className='about-pub-container' style={{display: 'flex', justifyContent: 'space-evenly', border: '0px '}}>
               {
                 pubList.map((ele, index) => (
