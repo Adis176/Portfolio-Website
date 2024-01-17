@@ -60,10 +60,8 @@ export let publicationList = [
     {
         ind: 3,
         src: './Images/publications/Heart.png',
-        desc: ['One third of deaths are caused due to cardio-vascular diseases. We aim to predict them in order to prevent them. ', 
-        '5 different Models namely logistic regression, support vector machine, MLP classifier with principal component analysis, deep neural network & Bootstrap Aggregation using random forest have been employed.',
-        'Bootstrap aggregation model gets the highest accuracy of 97.674% with a 90:10 data split, as it has the advantage of multiple model predictions.',
-        'Hyperparameter tuning was done with random search for model optimization.'],
+        desc: ['We aim to predict cardio-vascular diseases. 5 different Models namely logistic regression, SVM, MLP classifier with principal component analysis, deep neural network & Bootstrap Aggregation using random forest have been employed. Bootstrap aggregation model gets the highest accuracy of 97.674% with a 90:10 data split.'],
+        // desc: ['One third of deaths are caused due to cardio-vascular diseases. We aim to predict them in order to prevent them. 5 different Models namely logistic regression, support vector machine, MLP classifier with principal component analysis, deep neural network & Bootstrap Aggregation using random forest have been employed. Bootstrap aggregation model gets the highest accuracy of 97.674% with a 90:10 data split, as it has the advantage of multiple model predictions. Hyperparameter tuning was done with random search for model optimization.'],
         title: 'Cardiovascular Disease Prediction using Various Machine Learning Algorithms',
         link: 'https://www.researchgate.net/publication/364583692_Cardiovascular_Disease_Prediction_using_Various_Machine_Learning_Algorithms'
     },
