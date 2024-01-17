@@ -9,7 +9,7 @@ import AdityaResume from "../../Assets/Images/Aditya_Gandhi_Resume.png";
 import "./download.css";
 // import Wrapper from "../Wrapper.js";
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
+// convert pdf to image - https://tools.pdf24.org/en/
 export default function Download(){
     const Resume2 = require("../../Assets/Pdfs/Aditya_Gandhi_Resume.pdf");
 
