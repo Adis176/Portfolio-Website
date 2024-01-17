@@ -56,6 +56,10 @@
           transform-style: preserve-3d;
 }
 
+.pub-container:hover .pub-back{
+  color: white !important;
+}
+
 .pub-img{
   border: 1px solid rgba(75, 58, 231, 0.4)!important;
   border-radius: 1.6em !important;
@@ -93,7 +97,7 @@
   min-height: 11em;
     
   border-radius: 0.6em;
-  color: #fff;
+  /* color: #fff; */
   font-size: 1.5rem;
   opacity: 1 !important;
 }
@@ -102,6 +106,7 @@
     background: -webkit-linear-gradient(45deg, rgb(6, 5, 61) 0%, rgb(33, 31, 112) 50%, #324975 100%);
     background: -o-linear-gradient(45deg, rgb(33, 31, 112) 0%, rgb(4, 3, 71) 50%, #595c72 100%);
     background: linear-gradient(45deg, rgb(17, 16, 110) 0%, rgb(15, 13, 113) 50%, #596a72 100%);
+    color: transparent !important;
 }
 
     
