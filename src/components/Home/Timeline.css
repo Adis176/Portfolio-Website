@@ -1,3 +1,13 @@
+.timeline-row .timeline-time {
+    display: block;
+    position: absolute;
+    right: 50%;
+    /* top: 2em; */
+    text-align: right;
+    margin-right: 1.25em;
+    font-size: 1.5rem;   
+}
+
 .timeline {
     position: relative;
     padding: 0.5em;
@@ -24,15 +34,6 @@
     margin-bottom: 5em;
 }
 
-.timeline-row .timeline-time {
-    display: block;
-    position: absolute;
-    right: 50%;
-    top: 2em;
-    text-align: right;
-    margin-right: 1.25em;
-    font-size: 1.5rem;   
-}
 
 
 
@@ -207,14 +208,7 @@
         padding-left: 0;
         margin-bottom: 1em;
     }
-    .timeline .timeline-row .timeline-time {
-        display: none;
-        position: relative;
-        right: auto;
-        top: 0;
-        text-align: left;
-        margin: 0 0 0.4em 3.5em;
-    }
+
 
     .timeline .timeline-row .timeline-icon {
         top: 3.3em;

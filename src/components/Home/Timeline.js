@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 import BusinessIcon from '@mui/icons-material/Business';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
-function FadeInWhenVisible({ children }) {
+function FadeInWhenVisible({ children, dur}) {
     return (
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: 1 }}
+        transition={{ duration: dur }}
         variants={{
           visible: { opacity: 1, scale: 1 },
           hidden: { opacity: 0, scale: 0 }
@@ -20,18 +20,19 @@ function FadeInWhenVisible({ children }) {
         {children}
       </motion.div>
     );
-  }
+}
 export default function Timeline(){
         return(
         <div className="container bootdey">
             <div className="timeline-card-body">
                 <div className="timeline">
                     <div className="timeline-row">
-                        <FadeInWhenVisible>
+                        {/* <FadeInWhenVisible dur={0.2}> */}
                             <div className="timeline-time">
                                 January 2023 - July 2023
                             </div>
-        
+                        {/* </FadeInWhenVisible> */}
+                            <FadeInWhenVisible dur={1}>
                             <div className="timeline-content">
                                 <div className="timeline-title company">
                                     <BusinessIcon className="timeline-icon timeline-reg"/>
@@ -64,11 +65,12 @@ along with API Integration, using ReactJS framework. Utilized AWS platform for e
 
                 
                     <div className="timeline-row">
-                        <FadeInWhenVisible>
+                    {/* <FadeInWhenVisible dur={0.2}> */}
                             <div className="timeline-time">
                                 May 2022 - July 2022
                             </div>
-        
+                    {/* </FadeInWhenVisible> */}
+                            <FadeInWhenVisible dur={1}>
                             <div className="timeline-content">
                                 <div className="timeline-title company">
                                     <BusinessIcon className="timeline-icon timeline-reg"/>
