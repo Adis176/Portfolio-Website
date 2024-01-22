@@ -155,7 +155,7 @@ function About() {
                     <img src={LeetcodeStreak2} alt="Streak" className="about-lc-img" />
                   </motion.div>  
               </Col>
-              <Col xs={12} sm={10} md={7} lg={6} xl={4} style={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Col xs={9} sm={9} md={7} lg={6} xl={4} style={{display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <Info />
               </Col>
           </Row>
