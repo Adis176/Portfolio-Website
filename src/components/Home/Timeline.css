@@ -65,7 +65,9 @@
     padding-bottom: 0.2em;
     border-bottom: 0.1px solid rgb(104, 148, 236);
     border-width: 90%;;
-    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 0px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 0px 0 rgba(0, 0, 0, 0.19);
+    border-right: 0px !important;
+    border-left: 0px !important;
     margin-bottom: 0.5em;
 }
 .timeline-reg{
@@ -315,4 +317,17 @@
     }
 
 
+}
+
+@media (max-width: 1000px){
+    .timeline-time{
+        color: transparent;
+    }
+
+    .timeline-content{
+        margin: 0px !important;
+    }
+    .timeline:after{
+        border: none !important
+    }
 }
