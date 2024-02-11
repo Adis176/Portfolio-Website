@@ -64,22 +64,26 @@ button:focus {
 #preloader::before {
   content: "";
   position: absolute;
-  top: 30%;
-  left: -5%  ;
+  /* top: 30%;
+  left: -5%  ; */
   width: 25em  ; /* Adjust the width of the image as needed */
   height: 25em  ; /* Adjust the height of the image as needed */
   background-image: url(./Assets/Rocket9.gif);
   background-size: cover;
-  transform: rotate(-45deg);
+  
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(-45deg);
   z-index: 1; /* Ensure the image is above the background */
 }
-@media(max-width: 350px){
+/* @media(max-width: 350px){
   #preloader::before {
     position: absolute !important;
     top: 30% !important;
     left: -5% !important;
-    width: 20em !important; /* Adjust the width of the image as needed */
-    height: 20em !important; /* Adjust the height of the image as needed */
+    width: 20em !important; 
+    height: 20em !important; 
   }
 }
 
@@ -88,7 +92,7 @@ button:focus {
     position: absolute !important;
     top: 30% !important;
     left: -1% !important;
-    width: 30em !important; /* Adjust the width of the image as needed */
+    width: 30em !important; 
     height: 30em !important; 
   }
 }
@@ -98,7 +102,7 @@ button:focus {
     position: absolute !important;
     top: 30% !important;
     left: 15% !important;
-    width: 35em !important; /* Adjust the width of the image as needed */
+    width: 35em !important; 
     height: 35em !important; 
   }
 }
@@ -121,7 +125,7 @@ button:focus {
     width: 35em !important;
     height: 35em !important ; 
   }
-}
+} */
 
 #preloader-none {
   opacity: 0;
