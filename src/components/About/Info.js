@@ -31,7 +31,7 @@ const Info = () => {
                     <div className="info-content">
                         <GppGoodIcon className='info-icon' />
                         <div className="details">
-                            More than 1000 problems solved on Leetcode
+                            More than 1100 problems solved on Leetcode
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ const Info = () => {
                     <div className="info-content">
                         <StarPurple500Icon className='info-icon'/>
                         <div className="details">
-                            Highest LeetCode Rating: 2080
+                            Highest LeetCode Rating: 2203
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const Info = () => {
                     <div className="info-content">
                         <AddTaskIcon className='info-icon'/>
                         <div className="details">
-                            60+ Contests attended
+                            80+ Contests attended
                         </div>
                     </div>
                 </div>
