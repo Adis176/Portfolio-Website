@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Wrapper from "../Wrapper.js";
 // import Particle from "../Particle.tsx";
@@ -35,10 +35,17 @@ import Info from "./Info.js";
 
 function About() {
   const pubList = (publicationList);
-  // const pubsList = publicationList;
   // useEffect(() => {
-  //   setPubList(publicationList);
-  //   console.log(pubList);
+  //   const fetchLcDetails = async () => {
+  //     try{
+  //       let myDetails = await fetch('https://leetcode-stats-api.herokuapp.com/adis176');
+  //       console.log("my details: ", myDetails);
+  //     }
+  //     catch(err){
+  //       console.log("Error in fetching LC details: ", err);
+  //     }
+  //   }
+  //   fetchLcDetails();
   // }, []);
   return (
     <Wrapper>

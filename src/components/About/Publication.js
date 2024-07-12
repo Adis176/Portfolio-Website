@@ -10,8 +10,10 @@ export default function Cards(props){
         <Card className=" pub-card" >
             <div className="pub-container">
                 <div className="pub-front">
-                    <Card.Img className="pub-img" src={props.src} alt="img"/>
-                    <Card.Title className="pub-title">{props.title}</Card.Title>
+                    <div className="pub-front-inner">
+                        <Card.Img className="pub-img" src={props.src} alt="img"/>
+                        <Card.Title className="pub-title">{props.title}</Card.Title>
+                    </div>
                 </div>
                 <div className="pub-back">
                     <Card.Body >

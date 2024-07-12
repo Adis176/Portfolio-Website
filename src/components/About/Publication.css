@@ -14,10 +14,11 @@
   width: 100%;
   border-radius: 3em !important;
   opacity: 1 !important;
+  cursor: pointer;
 }
   
 .pub-front{
-  background-color: rgb(16, 13, 37) !important;
+  background: linear-gradient(135deg, #fffffff5, #3a4b8a, #ffffff98);
   /* background-color: rgb(30, 23, 67) !important; */
   border-radius: 0.6em;
   background-position: center;
@@ -36,12 +37,19 @@
   border-radius: 2em;
   /* padding: 1.5em; */
   height: inherit !important;
-  padding: 2.4em !important;
+  
   opacity: 1 !important;
-  border: 1px solid rgb(224, 222, 242, 0.2)!important;  
+  border: 0.5px solid rgb(224, 222, 242, 0.2)!important;  
+  box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
 }
 
-
+.pub-front-inner{
+  background: linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
+  padding: 2.4em !important;
+  height: 100%;
+  width: 100%;
+  border-radius: 2em;
+}
 .pub-container .pub-front{
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
@@ -72,7 +80,7 @@
 }
 
 .pub-title{
-  text-align: left !important;
+  text-align: center !important;
   margin-top: 1.5em !important;
   font-size: 2em !important;
   overflow: hidden;
@@ -95,7 +103,7 @@
           backface-visibility: hidden;
   text-align: center;
   min-height: 11em;
-    
+  
   border-radius: 0.6em;
   /* color: #fff; */
   font-size: 1.5rem;
@@ -125,6 +133,7 @@
   left: 0;
   width: 100%;
   height: inherit !important;
+  background: linear-gradient(135deg, #000513 0%, #3b3a8a 43%, #0d1120 100%) !important;
 }
 
 
@@ -175,18 +184,19 @@ p.pub-back{
     border: 0px !important;
     font-weight: 700 !important;
     border: 1px solid rgba(124, 148, 235, 0.4)!important; 
-    box-shadow: none !important;
-    background-color: rgba(1, 5, 32, 0.9) !important;
+    
+    background-color: rgba(0, 0, 0) !important;
     padding: 0.2em 0em !important;
     font-size: 0.7em !important;
     border-radius: 0.4em !important;
-    
     padding: 0.4em 0em !important;
 }
 
 .pub-button:hover{
   transform: scale(1.02);
   background-color: rgb(0, 0, 0) !important;
+  border: 0px !important;
+  box-shadow: 2px 2px 5px rgb(5, 5, 5, 0.7) !important;
 }
 
 

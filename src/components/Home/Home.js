@@ -63,7 +63,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
+                I'm
                 <strong className="main-name"> ADITYA GANDHI</strong>
               </h1>
 
