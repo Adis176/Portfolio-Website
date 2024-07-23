@@ -24,7 +24,6 @@ export default function Cards(props){
                     </Card.Body>
                 </div>
             </div>
-                          
         </Card>
     );
 }

@@ -33,7 +33,7 @@ html {
 .container-children-main{
   min-height: calc(100vh - 60px) !important;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   overflow-y: hidden;
 }
 

@@ -93,12 +93,14 @@ function About() {
               {
                 pubList.map((ele, index) => (
                   <motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  variants={  {
-                    hidden: { opacity: 0, x: -50 },
-                    visible: { opacity: 1, x: 0, transition: { delay: index*0.6, ease: "easeInOut" } },
-                  } } key={index} >
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={{
+                      hidden: { opacity: 0, x: -50 },
+                      visible: { opacity: 1, x: 0, transition: { delay: index*0.6, ease: "easeInOut" } },
+                    }} 
+                    key={index} 
+                  >
                     <Publication title={ele.title} desc={ele.desc} src={ele.src} link={ele.link}/>
                   </motion.div>
                 ))
@@ -122,7 +124,7 @@ function About() {
                   visible: { opacity: 1, x: 0, transition: { delay: 0.5, ease: "easeInOut" } },
                 }}>
                   <Edu name={'Georgia Institute of Technology'} imgsrc={gt3} degree={'Masters:'} specialization={'Computer Science'} imgbg={gt2} cgpa={'4.0 / 4.0'} location={'Atlanta, Georgia, USA'} sub={'Database System Concepts & Design, Network Security'}/>
-                </motion.div>
+                </motion.div>              
             </Col>
             <Col xs={9} sm={8}  md={7} lg={6} xl={5}  xxl={4}  style={{padding: '0px', margin: '0px', }} className="about-pub-pad">
               <motion.div

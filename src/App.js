@@ -49,7 +49,6 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/getintouch" element={<GetInTouch />} />
           <Route path="*" element={<Navigate to="/"/>} />
-
         </Routes>
         <Footer />
       </div>

@@ -1,166 +1,11 @@
+/* positioning the time */
 .timeline-row .timeline-time {
     display: block;
     position: absolute;
     right: 50%;
-    /* top: 2em; */
     text-align: right;
     margin-right: 1.25em;
     font-size: 1.5rem;   
-}
-
-.timeline {
-    position: relative;
-    padding: 0.5em;
-    margin: 0 auto;
-    overflow: hidden;
-    color: #ffffff;
-}
-
-.timeline:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -1px;
-    border-right: 2px dashed #c4d2e2;
-    height: 100%;
-    display: block;
-}
-
-.timeline-row {
-    padding-left: 50%;
-    position: relative;
-    margin-top: 1.25em; 
-    margin-bottom: 5em;
-}
-
-
-
-
-.timeline-row .timeline-content {
-    position: relative;
-    padding: 1.25em 1em;
-    -webkit-border-radius: 0.6em;
-    -moz-border-radius: 0.6em;
-    border-radius: 0.6em;
-}
-.timeline-card-body{
-    padding: 0px !important;
-    margin: 0px !important;
-}
-.timeline-row .timeline-content:after {
-    content: "";
-    position: absolute;
-    top: 1.25em;
-    height: 3px;
-    width: 2.5em;
-}
-
-.timeline-title{
-    display: flex;
-    font-weight: 500;
-    font-size: 1.2rem;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding-bottom: 0.2em;
-    border-bottom: 0.1px solid rgb(104, 148, 236);
-    border-width: 90%;;
-    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 0px 0 rgba(0, 0, 0, 0.19);
-    border-right: 0px !important;
-    border-left: 0px !important;
-    margin-bottom: 0.5em;
-}
-.timeline-reg{
-    display: flex;
-    width: 1.2em !important;
-    height: 1.2em !important;
-}
-.company{
-    font-size: 2em;
-    font-weight: 600;
-}
-.timeline-icon{
-    width: 1.4em !important;
-    height: 1.4em !important;
-}
-
-.badge{
-    color: rgb(142, 174, 255) !important;
-}
-
-.timeline-row:nth-child(even) .timeline-title {
-    flex-direction: row;
-}
-.timeline-row .timeline-content:before {
-    content: "";
-    position: absolute;
-    top: 1.25em;
-    right: -3.1em;
-    width: 1.25em;
-    height: 1.25em;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    z-index: 100;
-  
-    border: 4px dashed #c4d2e2;
-}
-
-
-.timeline-row .timeline-content .thumbs {
-    margin-bottom: 1.2em !important;
-}
-
-.timeline-row .timeline-content .thumbs img {
-    margin-bottom: 0.6em !important;
-}
-.timeline-row:nth-child(even) .timeline-content {
-    background-color: rgb(30, 23, 67); /* Slightly darker indigo background color */
-    /* Fallback Color */
-    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#2c1a8c), to(#947cd2)); */
-    /* Saf4+, Chrome */
-    background-image: -webkit-linear-gradient(to top, #21117c, #7ca4d2);
-    /* Chrome 10+, Saf5.1+, iOS 5+ */
-    background-image: -moz-linear-gradient(to top, #150768, #7ca4d2);
-    /* FF3.6 */
-    background-image: -ms-linear-gradient(to top, #21117c, #7ca4d2);
-    /* IE10 */
-    background-image: -o-linear-gradient(to top, #140760, #7ca4d2);
-    /* Opera 11.10+ */
-    background-image: linear-gradient(to top, #120653, #7ca4d2);
-    margin-left: 2.5em;
-    margin-right: 0;
-    text-align: left;
-    opacity: 0.9;
-}
-
-
-
-
-.timeline-row:nth-child(even) .timeline-content:after {
-    left: -2.4em !important;
-    border-right: 1.1em solid #ffffff;
-    border-top: 0.6em solid transparent;
-    border-bottom: 0.6em solid transparent;
-}
-
-.timeline-row:nth-child(even) .timeline-content:before {
-    left: -3.1em;
-    right: initial;
-}
-
-.timeline-row:nth-child(odd) .timeline-reg {
-    margin-left: 0.4em;
-}
-
-
-.timeline-row:nth-child(even) .timeline-reg {
-    margin-right: 0.4em;
-}
-
-.timeline-row:nth-child(odd) {
-    padding-left: 0;
-    padding-right: 50%;
 }
 
 .timeline-row:nth-child(odd) .timeline-time {
@@ -172,32 +17,199 @@
     margin-left: 1.25em;
 }
 
+
+/* actual card's container */
+.timeline {
+    position: relative;
+    padding: 0.5em;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+/*  dotted straight line connecting all */
+.timeline:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    border-right: 2px dashed #c4d2e2;
+    height: 100%;
+    display: block;
+}
+
+/* shifting elements, or rather cutting their widths to properly shift them */
+.timeline-row {
+    padding-left: 50%;
+    position: relative;
+    margin-top: 1.25em; 
+    margin-bottom: 5em;
+    overflow: visible !important;
+    transform-style: 'preserve-3d';
+    transform-origin: 'center';
+    perspective: '320px';
+}
+.container .bootdey{
+    overflow: visible !important;
+}
+
+
+.timeline-row:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 50%;
+}
+
+
+/* entire content  */
+.timeline-row .timeline-content {
+    position: relative;
+    padding: 1.25em 1em;
+    -webkit-border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    border-radius: 0.6em;
+    transition: 0.5s;
+}
+
+/*  parent of */
+/* .timeline-card-body{
+    padding: 0px !important;
+    margin: 0px !important;
+} */
+
+/* title, actually encompasses every element */
+.timeline-title{
+    display: flex;
+    font-weight: 500;
+    font-size: 1.2rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-bottom: 0.2em;
+    border-width: 90%;;
+    border-right: 0px !important;
+    border-left: 0px !important;
+    margin-bottom: 0.4em;
+}
+
+/* icon width */
+.timeline-reg{
+    display: flex;
+    width: 1.2em !important;
+    height: 1.2em !important;
+}
+
+/* content -info */
+.company{
+    font-size: 2em;
+    font-weight: 600;
+}
+.timeline-icon{
+    width: 1.4em !important;
+    height: 1.4em !important;
+}
+
+/*  order content */
+.timeline-row:nth-child(even) .timeline-title {
+    flex-direction: row;
+}
+
+/* circlular attachments */
+.timeline-row .timeline-content:before {
+    content: "";
+    position: absolute;
+    top: 1.25em;
+    right: -3.1em;
+    width: 1.25em;
+    height: 1.25em;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    z-index: 100;
+    border: 4px dashed #c4d2e2;
+}
+.timeline-row:nth-child(even) .timeline-content:before {
+    content: "";
+    position: absolute;
+    top: 1.25em;
+    left: -3.1em;
+    width: 1.25em;
+    height: 1.25em;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    z-index: 100;
+    border: 4px dashed #c4d2e2;
+}
+
+
+/* right side ele, properties move*/
+.timeline-row:nth-child(even) .timeline-content {
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 1em;
+    background-color: rgba(103, 100, 100, 0.2);
+    border-top: 0.4px solid rgba(225, 225, 225, 0.4);
+    border-left: 0.4px solid rgba(225, 225, 225, 0.4);
+    backdrop-filter: blur(30px);
+    z-index: 100;
+    
+    margin-left: 2.5em;
+    margin-right: 0;
+    text-align: left;
+    opacity: 0.9;
+}
 .timeline-row:nth-child(odd) .timeline-content {
-    background-color: rgb(30, 23, 67); /* Slightly darker indigo background color */
-    /* Fallback Color */
-    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#2c1a8c), to(#947cd2)); */
-    /* Saf4+, Chrome */
-    background-image: -webkit-linear-gradient(to top, #21117c, #7ca4d2);
-    /* Chrome 10+, Saf5.1+, iOS 5+ */
-    background-image: -moz-linear-gradient(to top, #150768, #7ca4d2);
-    /* FF3.6 */
-    background-image: -ms-linear-gradient(to top, #21117c, #7ca4d2);
-    /* IE10 */
-    background-image: -o-linear-gradient(to top, #140760, #7ca4d2);
-    /* Opera 11.10+ */
-    background-image: linear-gradient(to top, #120653, #7ca4d2);
- 
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 1em;
+    background-color: rgba(103, 100, 100, 0.2);
+    border-top: 0.4px solid rgba(225, 225, 225, 0.4);
+    border-left: 0.4px solid rgba(225, 225, 225, 0.4);
+    backdrop-filter: blur(30px);
+    z-index: 100;
+    margin-right: 2.5em;
+    margin-left: 0;
+    text-align: right;
     opacity: 0.9;
 }
 
 
+/* triangle connectors */
+.timeline-row:nth-child(even) .timeline-content:after {
+    left: -2.4em !important;
+    border-right: 1.1em solid #ffffff;
+    border-top: 0.6em solid transparent;
+    border-bottom: 0.6em solid transparent;
+}
 
+
+/* triangle connectors */
 .timeline-row:nth-child(odd) .timeline-content:after {
     right: -2.4em;
     border-left: 1.1em solid #ffffff;
     border-top: 0.6em solid transparent;
     border-bottom: 0.6em solid transparent;
 }
+
+
+/* positioming the triangle connectors */
+.timeline-row .timeline-content:after {
+    content: "";
+    position: absolute;
+    top: 1.25em;
+    height: 3px;
+    width: 2.5em;
+}
+
+
+/* shifting main title */
+.timeline-row:nth-child(odd) .timeline-reg {
+    margin-left: 0.4em;
+}
+.timeline-row:nth-child(even) .timeline-reg {
+    margin-right: 0.4em;
+}
+
+
+
 
 @media (max-width: 1000px) {
     .timeline {
@@ -220,7 +232,6 @@
     .timeline .timeline-row .timeline-content {
         padding: 1em;
         margin-left: 3.5em;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         position: relative;
     }
     .timeline .timeline-row .timeline-content:after {
@@ -239,7 +250,7 @@
         right: auto;
         left: -3em;
         top: 2em;
-        border-right: 1.12em solid #5a99ee;
+
         border-left: inherit;
     }
     .timeline.animated .timeline-row:nth-child(odd) .timeline-content {
@@ -293,32 +304,6 @@
 }
 
 
-
-
-@media (min-width: 1000px){
-    .timeline-row:nth-child(odd) .timeline-content {
-        background-color: rgb(30, 23, 67); /* Slightly darker indigo background color */
-        /* Fallback Color */
-        /* background-image: -webkit-gradient(linear, left top, left bottom, from(#2c1a8c), to(#947cd2)); */
-        /* Saf4+, Chrome */
-        background-image: -webkit-linear-gradient(to top, #21117c, #7ca4d2);
-        /* Chrome 10+, Saf5.1+, iOS 5+ */
-        background-image: -moz-linear-gradient(to top, #150768, #7ca4d2);
-        /* FF3.6 */
-        background-image: -ms-linear-gradient(to top, #21117c, #7ca4d2);
-        /* IE10 */
-        background-image: -o-linear-gradient(to top, #140760, #7ca4d2);
-        /* Opera 11.10+ */
-        background-image: linear-gradient(to top, #120653, #7ca4d2);
-        margin-right: 2.5em;
-        margin-left: 0;
-        text-align: right;
-        opacity: 0.9;
-    }
-
-
-}
-
 @media (max-width: 1000px){
     .timeline-time{
         color: transparent;
@@ -330,4 +315,14 @@
     .timeline:after{
         border: none !important
     }
+}
+
+
+.time-img-even{
+    position: absolute;
+    bottom: -50px;
+    right: -45px;
+    overflow: visible !important;
+    width: 10em;
+    overflow:visible;
 }
