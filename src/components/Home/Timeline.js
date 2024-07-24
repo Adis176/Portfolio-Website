@@ -1,30 +1,30 @@
 import "./Timeline.css"
 import React from "react";
 // import ReactDOM from "react-dom";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import VanillaTiltComponent from "./VanillaTilt/vanillaTiltCompo";
 import BusinessIcon from '@mui/icons-material/Business';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
-import Saturn from "../../Assets/Images/Home/Saturn.png";
+// import Saturn from "../../Assets/Images/Home/Saturn.png";
 import Mars from "../../Assets/Images/Home/mars.gif";
 
-function FadeInWhenVisible({ children, dur}) {
-    return (
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ duration: dur }}
-        variants={{
-          visible: { opacity: 1, scale: 1 },
-          hidden: { opacity: 0, scale: 0 }
-        }}
-      >
-        {children}
-      </motion.div>
-    );
-}
+// function FadeInWhenVisible({ children, dur}) {
+//     return (
+//       <motion.div
+//         initial="hidden"
+//         whileInView="visible"
+//         viewport={{ once: true }}
+//         transition={{ duration: dur }}
+//         variants={{
+//           visible: { opacity: 1, scale: 1 },
+//           hidden: { opacity: 0, scale: 0 }
+//         }}
+//       >
+//         {children}
+//       </motion.div>
+//     );
+// }
 export default function Timeline(){
     const tiltOptions = {
         max: 25,

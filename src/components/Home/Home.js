@@ -8,7 +8,7 @@ import Timeline from "./Timeline.js";
 import { motion } from "framer-motion";
 import E1 from "../GetInTouch/Earth/E1.js";
 import Heading from "../Extra/Heading/Heading.js";
-import Saturn from "../../Assets/Images/Home/Saturn.png";
+// import Saturn from "../../Assets/Images/Home/Saturn.png";
 import {
   AiFillGithub,
   AiFillInstagram,
