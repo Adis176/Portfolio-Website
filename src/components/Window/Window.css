@@ -1,0 +1,6 @@
+.dotted-border{
+    background-image: radial-gradient(circle, #000000 2px, transparent 2px), radial-gradient(circle, #000000 2px, transparent 2px), radial-gradient(circle, #000000 2px, transparent 2px), radial-gradient(circle, #000000 2px, transparent 2px);
+    background-position: left top, right top, left bottom, left top;
+    background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+    background-size: 27px 4px, 4px 27px, 27px 4px, 4px 27px;
+}

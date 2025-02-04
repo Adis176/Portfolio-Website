@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Footer from "./components/Footer";
 import Rough1 from "./components/Rough.js/rough1";
+import Rough2 from "./components/Rough2/Rough2";
 import Download from "./components/Downloads/download";
 // import KnowMe from "./components/KnowMe/KnowMe";
 import Projects from "./components/Projects/Projects";
@@ -45,6 +46,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/rough" element={<Rough1 />} />
+          <Route path="/rough2" element={<Rough2 />} />
           <Route path="/download" element={<Download />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/getintouch" element={<GetInTouch />} />
