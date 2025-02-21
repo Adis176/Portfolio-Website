@@ -5,13 +5,13 @@ import Wrapper from "../Wrapper.js";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { AiOutlineArrowDown } from "react-icons/ai";
 // import Resume from "../../Assets/Images/Aditya_Resume.png";
-import AdityaResume from "../../Assets/Images/Aditya_Gandhi_Resume.png";
+import AdityaResume from "../../Assets/Images/Aditya_FrontEnd.jpg";
 import "./download.css";
 // import Wrapper from "../Wrapper.js";
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 // convert pdf to image - https://tools.pdf24.org/en/
 export default function Download(){
-    const Resume2 = require("../../Assets/Pdfs/Aditya_Gandhi_Resume.pdf");
+    const Resume2 = require("../../Assets/Pdfs/Aditya_Resume_FrontEnd.pdf");
 
     // const pdfUrl = "../../Assets/Pdfs/Aditya_Gandhi_Resume.pdf";
     const onButtonClick = () => {
