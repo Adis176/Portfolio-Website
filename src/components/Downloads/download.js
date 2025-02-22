@@ -3,9 +3,9 @@ import Wrapper from "../Wrapper.js";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { AiOutlineArrowDown } from "react-icons/ai";
 // import Resume from "../../Assets/Images/Aditya_Resume.png";
-import AdityaResume from "../../Assets/Images/Aditya_FrontEnd.jpg";
-import "./download.css";
 
+import "./download.css";
+const AdityaResume = lazy(() => import("./resume.js"));
 export default function Download(){
     const Fallback = () => {
         return (
@@ -35,7 +35,7 @@ export default function Download(){
             <Row xs={12} style={{justifyContent: 'center', alignItems: 'center', display: 'flex' }}>
                 <Col xs={12} md={10} lg={9} style={{justifyContent: 'center', alignItems: 'center', display: 'flex', marginTop: '2.5em'}}>
                     <Suspense fallback={<Fallback />}>
-                        <img src={AdityaResume} alt="Aditya_Resume" className="download-resume-img"/>
+                        <AdityaResume />
                     </Suspense>
                 </Col>
             </Row>
