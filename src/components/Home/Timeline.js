@@ -8,24 +8,46 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 // import Saturn from "../../Assets/Images/Home/Saturn.png";
 import Mars from "../../Assets/Images/Home/mars.gif";
+import MarsRotate from "../../Assets/Images/Home/marsrotate.webm";
 
-// function FadeInWhenVisible({ children, dur}) {
-//     return (
-//       <motion.div
-//         initial="hidden"
-//         whileInView="visible"
-//         viewport={{ once: true }}
-//         transition={{ duration: dur }}
-//         variants={{
-//           visible: { opacity: 1, scale: 1 },
-//           hidden: { opacity: 0, scale: 0 }
-//         }}
-//       >
-//         {children}
-//       </motion.div>
-//     );
-// }
 export default function Timeline(){
+    // Basic implementation
+const VideoPlayer = () => {
+    return (
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        playsInline
+        className="video-class" // Add your styling
+      >
+        <source src="/path/to/your/video.webm" type="video/webm" />
+        {/* Fallback for browsers that don't support WebM */}
+        <source src="/path/to/your/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    );
+  };
+  
+  // With more controls and options
+    const VideoPlayerAdvanced = () => {
+        return (
+        <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls={false} // Hide video controls
+            className="w-full h-auto" // Example Tailwind classes
+            style={{
+            objectFit: 'cover',
+            maxWidth: '100%',
+            }}
+        >
+            <source src="../../Assets/Images/Home/marsrotate.webm" type="video/webm" />
+        </video>
+        );
+    };
     const tiltOptions = {
         max: 25,
         speed: 400,
@@ -71,7 +93,7 @@ export default function Timeline(){
     
                     <div className="timeline-row" style={{overflow: 'visible'}}>
                         <img src={Mars} alt='Planet' className="time-img-even"/>
-                        
+                        {/* <VideoPlayerAdvanced /> */}
                         <div className="timeline-time">
                             May 2022 - July 2022
                         </div>

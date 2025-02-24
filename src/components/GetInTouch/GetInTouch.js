@@ -28,6 +28,8 @@ export default function GetInTouch(){
       .then(
         () => {
           console.log('SUCCESS!');
+          setForm({});
+          formRef.current.reset();
         },
         (error) => {
           console.log('FAILED...', error);

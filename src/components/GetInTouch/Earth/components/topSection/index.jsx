@@ -81,9 +81,6 @@ export function TopSection() {
         warming and will set to fire. Stop polluting, it will cost extra.
       </Paragraph>
       <DonateButton>Donate</DonateButton>
-      {/* <MadeBy>
-        <u>Made By:</u> Islem Maboud
-      </MadeBy> */}
     </TopSectionContainer>
   );
 }
