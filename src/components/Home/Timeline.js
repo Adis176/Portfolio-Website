@@ -8,46 +8,46 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 // import Saturn from "../../Assets/Images/Home/Saturn.png";
 import Mars from "../../Assets/Images/Home/mars.gif";
-import MarsRotate from "../../Assets/Images/Home/marsrotate.webm";
+// import MarsRotate from "../../Assets/Images/Home/marsrotate.webm";
 
 export default function Timeline(){
     // Basic implementation
-const VideoPlayer = () => {
-    return (
-      <video 
-        autoPlay 
-        loop 
-        muted 
-        playsInline
-        className="video-class" // Add your styling
-      >
-        <source src="/path/to/your/video.webm" type="video/webm" />
-        {/* Fallback for browsers that don't support WebM */}
-        <source src="/path/to/your/video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    );
-  };
+// const VideoPlayer = () => {
+//     return (
+//       <video 
+//         autoPlay 
+//         loop 
+//         muted 
+//         playsInline
+//         className="video-class" // Add your styling
+//       >
+//         <source src="/path/to/your/video.webm" type="video/webm" />
+//         {/* Fallback for browsers that don't support WebM */}
+//         <source src="/path/to/your/video.mp4" type="video/mp4" />
+//         Your browser does not support the video tag.
+//       </video>
+//     );
+//   };
   
   // With more controls and options
-    const VideoPlayerAdvanced = () => {
-        return (
-        <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            controls={false} // Hide video controls
-            className="w-full h-auto" // Example Tailwind classes
-            style={{
-            objectFit: 'cover',
-            maxWidth: '100%',
-            }}
-        >
-            <source src="../../Assets/Images/Home/marsrotate.webm" type="video/webm" />
-        </video>
-        );
-    };
+    // const VideoPlayerAdvanced = () => {
+    //     return (
+    //     <video
+    //         autoPlay
+    //         loop
+    //         muted
+    //         playsInline
+    //         controls={false} // Hide video controls
+    //         className="w-full h-auto" // Example Tailwind classes
+    //         style={{
+    //         objectFit: 'cover',
+    //         maxWidth: '100%',
+    //         }}
+    //     >
+    //         <source src="../../Assets/Images/Home/marsrotate.webm" type="video/webm" />
+    //     </video>
+    //     );
+    // };
     const tiltOptions = {
         max: 25,
         speed: 400,
